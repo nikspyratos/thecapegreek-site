@@ -1,9 +1,8 @@
 module.exports = {
     purge: {
         mode: 'all',
-        content: [
-            './src/**/*.html'
-        ],
+        content: ['./src/index.html'],
+        css: ['./src/style.css'],
         options: {
             keyframes: true,
         },
