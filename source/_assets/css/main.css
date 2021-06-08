@@ -1,0 +1,104 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+:root {
+    --tcg_dark: #2d3142;
+    --tcg_grey: #525778;
+    --tcg_white:#fbf9ff;
+    --tcg_cyan: #85ffc7;
+    --tcg_blue: #3772ff;
+    --tcg_light_blue: #42cafd;
+    --tcg_green: #6fd08c;
+    --tcg_purple: #8855ff;
+    --tcg_pink: #ef27a6;
+    --tcg_red: #db3069;
+    --tcg_radish: #de4d86;
+    --tcg_crimson: #ff220c;
+}
+
+/* Text */
+
+@font-face {
+    font-family: 'Atkinson-Hyperlegible';
+    src: url("../../fonts/Atkinson-Hyperlegible-Regular-102.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Atkinson-Hyperlegible';
+    src: url("../../fonts/Atkinson-Hyperlegible-Bold-102.ttf");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Atkinson-Hyperlegible';
+    src: url("../../fonts/Atkinson-Hyperlegible-Italic-102.ttf");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Atkinson-Hyperlegible';
+    src: url("../../fonts/Atkinson-Hyperlegible-BoldItalic-102.ttf");
+    font-weight: bold;
+    font-style: italic;
+}
+
+/* Colours */
+.tcg-bg-gradient {
+    background: rgb(133,255,199);
+    background: -moz-linear-gradient(-45deg, var(--tcg_crimson), var(--tcg_radish), var(--tcg_purple), var(--tcg_blue), var(--tcg_light_blue), var(--tcg_green), var(--tcg_cyan));
+    background: -webkit-linear-gradient(-45deg, var(--tcg_crimson), var(--tcg_radish), var(--tcg_purple), var(--tcg_blue), var(--tcg_light_blue), var(--tcg_green), var(--tcg_cyan));
+    background: linear-gradient(-45deg, var(--tcg_crimson), var(--tcg_radish), var(--tcg_purple), var(--tcg_blue), var(--tcg_light_blue), var(--tcg_green), var(--tcg_cyan));
+    -webkit-animation: moveGradient 15s ease infinite;
+    -moz-animation: moveGradient 15s ease infinite;
+    animation: moveGradient 15s ease infinite;
+    transition: background-color 0.4s;
+}
+
+/* Animations */
+.tcg-bg-gradient {
+    background-repeat: no-repeat;
+    background-size: 200% 250%;
+    -webkit-animation: moveGradient 15s ease infinite;
+    -moz-animation: moveGradient 15s ease infinite;
+    animation: moveGradient 15s ease infinite;
+    transition: background-color 0.4s;
+}
+
+@-webkit-keyframes moveGradient {
+    0% {
+        background-position:0% 50%
+    }
+    50% {
+        background-position:100% 50%
+    }
+    100% {
+        background-position:0% 50%
+    }
+}
+@-moz-keyframes moveGradient {
+    0% {
+        background-position:0% 50%
+    }
+    50% {
+        background-position:100% 50%
+    }
+    100% {
+        background-position:0% 50%
+    }
+}
+@keyframes moveGradient {
+    0% {
+        background-position:0% 50%
+    }
+    50% {
+        background-position:100% 50%
+    }
+    100% {
+        background-position:0% 50%
+    }
+}
