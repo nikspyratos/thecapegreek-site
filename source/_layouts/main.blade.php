@@ -10,13 +10,11 @@
         <script defer src="{{ mix('js/main.js', 'assets/build') }}"></script>
     </head>
     <body class="font-display text-tcg_dark antialiased tcg-bg-gradient min-h-screen h-screen">
-        <div class="container mx-auto my-5">
-            <div class="shadow-xl">
+        <div class="container mx-auto my-16 relative">
+            <div class="shadow-lg rounded-xl">
                 @include('_partials.nav')
-                <div class="bg-tcg_white min-h-full h-full px-10 py-5">
-                    <h1>{{ $page->title }}</h1>
-                    @yield('body')
-                </div>
+                @include('_partials.body')
+                @include('_partials.footer')
             </div>
         </div>
     </body>

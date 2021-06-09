@@ -62,7 +62,8 @@
 /* Animations */
 .tcg-bg-gradient {
     background-repeat: no-repeat;
-    background-size: 200% 250%;
+    background-attachment: fixed;
+    background-size: 300vw 300vh;
     -webkit-animation: moveGradient 15s ease infinite;
     -moz-animation: moveGradient 15s ease infinite;
     animation: moveGradient 15s ease infinite;
