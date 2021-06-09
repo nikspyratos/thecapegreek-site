@@ -12,7 +12,7 @@
             </div>
         @endforeach
     </div>
-    <div class="w-0 md:w-auto invisible md:visible self-center mx-4 flex flex-row text-xl font-bold">
+    <div class="w-0 md:w-auto invisible md:visible self-center flex flex-row text-xl font-bold">
         <span class="font-bold self-center">Contact:</span>
         @foreach($page->contacts as $contact)
             <div class="mx-2">

@@ -6,7 +6,7 @@
             <span class="text-tcg_green">{{ $page->nav->subtitle }}</span>
         </div>
     </div>
-    <div class="w-0 md:w-auto invisible md:visible self-center mx-4 flex flex-row text-xl font-bold">
+    <div class="w-0 md:w-auto invisible md:visible self-center flex flex-row text-xl font-bold">
         @foreach($page->nav->links as $navItem)
             <div class="py-1 px-2 text-center {{ !$page->selected($navItem->name) && $loop->first ? 'border-b-2 border-white' : '' }}">
                 <a
