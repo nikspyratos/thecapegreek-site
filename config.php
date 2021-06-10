@@ -31,11 +31,6 @@ return [
                 'title' => 'Reading',
                 'name' => 'reading',
                 'url' => 'reading'
-            ],
-            [
-                'title' => 'test',
-                'name' => 'test',
-                'url' => 'test'
             ]
         ],
     ],

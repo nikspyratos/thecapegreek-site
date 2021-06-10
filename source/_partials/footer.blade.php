@@ -1,5 +1,5 @@
 <div class="w-full p-4 flex flex-wrap lg:flex-row justify-between bg-tcg_dark rounded-b-xl text-tcg_white">
-    <div class="self-center flex flex-row font-bold text-center text-md divide divide-x-2 divide-tcg_grey">
+    <div class="w-full lg:w-auto self-center justify-center flex flex-row font-bold text-center text-lg divide divide-x-2 divide-tcg_grey">
         @foreach($page->footer->attributions as $attribution)
             <div class="{{ !$loop->first ? 'px-2' : 'pr-2' }}">
                 {{ $attribution->text }}
@@ -12,7 +12,7 @@
             </div>
         @endforeach
     </div>
-    <div class="w-full lg:w-auto mt-2 lg:mt-0 self-center flex flex-wrap text-xl font-bold">
+    <div class="w-full lg:w-auto mt-3 lg:mt-0 self-center justify-center flex flex-wrap text-lg font-bold">
         <span class="font-bold self-center">Contact:</span>
         @foreach($page->contacts as $contact)
             <div class="mx-1">
