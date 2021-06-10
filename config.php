@@ -67,6 +67,11 @@ return [
                 'text' => 'Unicons by',
                 'author' => 'Iconscout',
                 'url' => 'https://iconscout.com/'
+            ],
+            [
+                'text' => '',
+                'author' => 'COVID-19',
+                'url' => 'https://sacoronavirus.co.za'
             ]
         ]
     ]
