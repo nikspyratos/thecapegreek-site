@@ -2,15 +2,35 @@
 extends: _layouts.main
 section: body
 permalink: index.html
-title: "Hello, World!"
+title: "Home"
 ---
 
-Omnis natus non quis ipsa. Omnis ut reiciendis error unde quo dolorem quo vitae. Et laboriosam voluptatibus fugiat. Quisquam aliquam veritatis tempore dolores. Dolorum eius neque tempora.
+# Welcome to my website!
 
-Tenetur rem non aspernatur eos labore et placeat placeat. Quos saepe odio quos mollitia ipsa rem. Illum enim id quasi tempore. Ut nihil sint consequatur quia asperiores. Numquam id rerum aut dolorem. Atque et deserunt omnis vitae perspiciatis.
+Heyo, I'm Nik. I'm a Greek-South African software developer currently based in Cape Town. This website is a space for me to write, play, and share ideas.
 
-Deleniti cum ipsa voluptatem magni eum quia cum pariatur. Placeat quisquam dolores quaerat delectus consequuntur magnam asperiores voluptatem. Impedit aut mollitia quidem harum ea iure. Molestiae perferendis et tempore quasi quo ipsa. Quo pariatur ut et voluptas.
+## Community 
 
-Occaecati adipisci rerum excepturi iste. Aspernatur unde distinctio nihil dolore qui atque ullam ipsum. Repudiandae ut laudantium molestiae exercitationem reprehenderit molestias facilis. Ea est pariatur delectus molestias vero aut voluptatem incidunt. Occaecati est aut a sint optio provident nihil assumenda. Itaque et officia atque.
+I'm very big on the value of tech communities. Active on [zatech.co.za](https://zatech.co.za) and participating in several others.
 
-Assumenda at necessitatibus ut. Quisquam animi sint delectus possimus. Autem non tempora ut voluptas velit et doloremque assumenda. Soluta asperiores laborum non veritatis officiis. Quia aut magni iusto ratione. Perspiciatis odit deserunt quas non.
+Former co-host of the [Cape Town PHP Group](https://www.meetup.com/Cape-Town-PHP-Group/), now organiser of [PHP South Africa](https://phpsouthafrica.org) alongside some awesome people. Feel free to check drop by the next meetup!
+
+## Companies
+
+Companies I've worked for include:
+
+- Car & Classic: 2021-Present
+- Superbalist: 2020
+- TCT Digital: 2018-2019
+- South African Broadband Education Networks: 2017-2018
+
+## Projects
+
+Like many other developers, I work on a few side projects. Not all of these are always completed, but the learning experience and research process is a way to keep sharp.
+
+Recent projects include:
+
+- Personal cloud automation with Ansible & Terraform
+- Building this website with Jigsaw & Tailwind
+
+Like most developers, I have opinions on things. This doesn't reflect the views of any client or employer of mine, past, present and future.

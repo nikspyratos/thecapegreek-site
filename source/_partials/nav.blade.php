@@ -10,7 +10,7 @@
         @foreach($page->nav->links as $navItem)
             <div class="mt-1 mx-2 text-center {{ $page->selected($navItem->name) ? 'border-b-2 border-white' : '' }}">
                 <a
-                        class=" {{ $loop->even ? 'text-tcg_light_blue' : 'text-tcg_green' }}"
+                        class="{{ $loop->even ? 'text-tcg_light_blue' : 'text-tcg_green' }}"
                         href="{{ $navItem->url }}"
                 >
                     {{ $navItem->title }}

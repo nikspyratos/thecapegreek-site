@@ -11,7 +11,7 @@
     </head>
     <body class="font-display text-tcg_dark antialiased bg-fixed tcg-bg-gradient">
         <div class="container mx-auto my-16 relative">
-            <div class="shadow-lg rounded-xl">
+            <div class="h-full shadow-lg rounded-xl">
                 @include('_partials.nav')
                 @include('_partials.body')
                 @include('_partials.footer')

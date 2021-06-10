@@ -13,7 +13,7 @@
         @endforeach
     </div>
     <div class="w-full lg:w-auto mt-3 lg:mt-0 self-center justify-center flex flex-wrap flex-row text-md sm:text-lg font-bold">
-        <span class="font-bold self-center">Contact:</span>
+        <span class="mr-1 font-bold self-center">Contact:</span>
         @foreach($page->contacts as $contact)
             <div class="mx-1">
                 <a href="{{ $contact->url }}">

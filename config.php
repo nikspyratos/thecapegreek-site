@@ -10,24 +10,29 @@ return [
     'collections' => [
     ],
     'selected' => function ($page, $section) {
-        return Str::contains($page->getPath(), $section) ? 'selected' : '';
+        return $section == 'home' || Str::contains($page->getPath(), $page->nav->links[$section]['url']);
     },
     'nav' => [
         'logo' => '/assets/images/profile-rounded.webp',
         'title' => 'Nik Spyratos',
         'subtitle' => 'TheCapeGreek',
         'links' => [
-            [
+            'home' => [
+                'title' => 'Home',
+                'name' => 'home',
+                'url' => ''
+            ],
+            'thoughts' => [
                 'title' => 'Thoughts',
                 'name' => 'thoughts',
                 'url' => 'thoughts'
             ],
-            [
+            'projects' => [
                 'title' => 'Projects',
                 'name' => 'projects',
                 'url' => 'projects'
             ],
-            [
+            'reading' => [
                 'title' => 'Reading',
                 'name' => 'reading',
                 'url' => 'reading'

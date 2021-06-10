@@ -6,7 +6,7 @@
 :root {
     --tcg_dark: #2d3142;
     --tcg_grey: #525778;
-    --tcg_white:#fbf9ff;
+    --tcg_white: #fbf9ff;
     --tcg_cyan: #85ffc7;
     --tcg_blue: #3772ff;
     --tcg_light_blue: #42cafd;
@@ -18,10 +18,51 @@
     --tcg_crimson: #ff220c;
 }
 
-/* https://css-tricks.com/custom-tailwind-css/ */
 @layer base {
+    /* https://css-tricks.com/custom-tailwind-css/ */
     html {
         -webkit-tap-highlight-color: transparent;
+        @apply text-tcg_dark
+    }
+
+    a {
+        @apply transition ease-in-out font-bold text-tcg_blue hover:text-tcg_pink
+    }
+
+    #content a {
+        @apply border-b-2 border-tcg_blue hover:border-tcg_pink
+    }
+
+    p {
+        @apply ml-2 my-2
+    }
+
+    ol, ul {
+        @apply list-disc ml-8 my-2
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        @apply font-bold
+    }
+
+    h1 {
+        @apply text-2xl text-tcg_light_blue
+    }
+
+    h2 {
+        @apply text-xl text-tcg_green
+    }
+
+    h3 {
+        @apply text-lg text-tcg_purple
+    }
+
+    h5 {
+        @apply text-sm text-tcg_crimson
+    }
+
+    h6 {
+        @apply text-xs
     }
 }
 
@@ -57,13 +98,13 @@
 
 /* Colours */
 .tcg-bg-gradient {
-    background: rgb(133,255,199);
+    background: rgb(133, 255, 199);
     /*background: -moz-linear-gradient(-45deg, var(--tcg_crimson), var(--tcg_radish), var(--tcg_purple), var(--tcg_blue), var(--tcg_light_blue), var(--tcg_green), var(--tcg_cyan));*/
     /*background: -webkit-linear-gradient(-45deg, var(--tcg_crimson), var(--tcg_radish), var(--tcg_purple), var(--tcg_blue), var(--tcg_light_blue), var(--tcg_green), var(--tcg_cyan));*/
     /*background: linear-gradient(-45deg, var(--tcg_crimson), var(--tcg_radish), var(--tcg_purple), var(--tcg_blue), var(--tcg_light_blue), var(--tcg_green), var(--tcg_cyan));*/
-    background: -moz-linear-gradient(-45deg, var(--tcg_purple), var(--tcg_blue), var(--tcg_light_blue), var(--tcg_green), var(--tcg_cyan));
-    background: -webkit-linear-gradient(-45deg, var(--tcg_purple), var(--tcg_blue), var(--tcg_light_blue), var(--tcg_green), var(--tcg_cyan));
-    background: linear-gradient(-45deg, var(--tcg_purple), var(--tcg_blue), var(--tcg_light_blue), var(--tcg_green), var(--tcg_cyan));
+    background: -moz-linear-gradient(45deg, var(--tcg_cyan), var(--tcg_green), var(--tcg_light_blue), var(--tcg_blue), var(--tcg_purple), var(--tcg_pink));
+    background: -webkit-linear-gradient(45deg, var(--tcg_cyan), var(--tcg_green), var(--tcg_light_blue), var(--tcg_blue), var(--tcg_purple), var(--tcg_pink));
+    background: linear-gradient(45deg, var(--tcg_cyan), var(--tcg_green), var(--tcg_light_blue), var(--tcg_blue), var(--tcg_purple), var(--tcg_pink));
     -webkit-animation: moveGradient 15s ease infinite;
     -moz-animation: moveGradient 15s ease infinite;
     animation: moveGradient 15s ease infinite;
@@ -71,7 +112,7 @@
 }
 
 .tcg-text-light_blue-green {
-    background: -webkit-linear-gradient(-45deg, var(--tcg_light_blue), var(--tcg_cyan),  var(--tcg_green));
+    background: -webkit-linear-gradient(-45deg, var(--tcg_light_blue), var(--tcg_cyan), var(--tcg_green));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -89,34 +130,36 @@
 
 @-webkit-keyframes moveGradient {
     0% {
-        background-position:0% 50%
+        background-position: 0% 50%
     }
     50% {
-        background-position:100% 50%
+        background-position: 100% 50%
     }
     100% {
-        background-position:0% 50%
+        background-position: 0% 50%
     }
 }
+
 @-moz-keyframes moveGradient {
     0% {
-        background-position:0% 50%
+        background-position: 0% 50%
     }
     50% {
-        background-position:100% 50%
+        background-position: 100% 50%
     }
     100% {
-        background-position:0% 50%
+        background-position: 0% 50%
     }
 }
+
 @keyframes moveGradient {
     0% {
-        background-position:0% 50%
+        background-position: 0% 50%
     }
     50% {
-        background-position:100% 50%
+        background-position: 100% 50%
     }
     100% {
-        background-position:0% 50%
+        background-position: 0% 50%
     }
 }

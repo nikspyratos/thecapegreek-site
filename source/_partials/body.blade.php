@@ -1,3 +1,5 @@
-<div class="min-h-full h-full px-10 py-5 bg-tcg_white shadow-inner">
-    @yield('body')
+<div id="content" class="bg-tcg_white shadow-inner">
+    <div class="mx-8 py-6 text-lg">
+        @yield('body')
+    </div>
 </div>
