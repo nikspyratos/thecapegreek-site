@@ -64,9 +64,9 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 300vw 300vh;
-    -webkit-animation: moveGradient 15s ease infinite;
-    -moz-animation: moveGradient 15s ease infinite;
-    animation: moveGradient 15s ease infinite;
+    -webkit-animation: moveGradient 20s ease infinite;
+    -moz-animation: moveGradient 20s ease infinite;
+    animation: moveGradient 20s ease infinite;
     transition: background-color 0.4s;
 }
 
