@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
         <script defer src="{{ mix('js/main.js', 'assets/build') }}"></script>
     </head>
-    <body class="min-h-screen h-screen font-display text-tcg_dark antialiased bg-fixed tcg-bg-gradient">
+    <body class="font-display text-tcg_dark antialiased bg-fixed tcg-bg-gradient">
         <div class="container mx-auto my-16 relative">
             <div class="shadow-lg rounded-xl">
                 @include('_partials.nav')

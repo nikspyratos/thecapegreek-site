@@ -2,6 +2,7 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 
+/* Bootstrapping */
 :root {
     --tcg_dark: #2d3142;
     --tcg_grey: #525778;
@@ -15,6 +16,13 @@
     --tcg_red: #db3069;
     --tcg_radish: #de4d86;
     --tcg_crimson: #ff220c;
+}
+
+/* https://css-tricks.com/custom-tailwind-css/ */
+@layer base {
+    html {
+        -webkit-tap-highlight-color: transparent;
+    }
 }
 
 /* Text */
@@ -50,20 +58,29 @@
 /* Colours */
 .tcg-bg-gradient {
     background: rgb(133,255,199);
-    background: -moz-linear-gradient(-45deg, var(--tcg_crimson), var(--tcg_radish), var(--tcg_purple), var(--tcg_blue), var(--tcg_light_blue), var(--tcg_green), var(--tcg_cyan));
-    background: -webkit-linear-gradient(-45deg, var(--tcg_crimson), var(--tcg_radish), var(--tcg_purple), var(--tcg_blue), var(--tcg_light_blue), var(--tcg_green), var(--tcg_cyan));
-    background: linear-gradient(-45deg, var(--tcg_crimson), var(--tcg_radish), var(--tcg_purple), var(--tcg_blue), var(--tcg_light_blue), var(--tcg_green), var(--tcg_cyan));
+    /*background: -moz-linear-gradient(-45deg, var(--tcg_crimson), var(--tcg_radish), var(--tcg_purple), var(--tcg_blue), var(--tcg_light_blue), var(--tcg_green), var(--tcg_cyan));*/
+    /*background: -webkit-linear-gradient(-45deg, var(--tcg_crimson), var(--tcg_radish), var(--tcg_purple), var(--tcg_blue), var(--tcg_light_blue), var(--tcg_green), var(--tcg_cyan));*/
+    /*background: linear-gradient(-45deg, var(--tcg_crimson), var(--tcg_radish), var(--tcg_purple), var(--tcg_blue), var(--tcg_light_blue), var(--tcg_green), var(--tcg_cyan));*/
+    background: -moz-linear-gradient(-45deg, var(--tcg_purple), var(--tcg_blue), var(--tcg_light_blue), var(--tcg_green), var(--tcg_cyan));
+    background: -webkit-linear-gradient(-45deg, var(--tcg_purple), var(--tcg_blue), var(--tcg_light_blue), var(--tcg_green), var(--tcg_cyan));
+    background: linear-gradient(-45deg, var(--tcg_purple), var(--tcg_blue), var(--tcg_light_blue), var(--tcg_green), var(--tcg_cyan));
     -webkit-animation: moveGradient 15s ease infinite;
     -moz-animation: moveGradient 15s ease infinite;
     animation: moveGradient 15s ease infinite;
     transition: background-color 0.4s;
 }
 
+.tcg-text-light_blue-green {
+    background: -webkit-linear-gradient(-45deg, var(--tcg_light_blue), var(--tcg_cyan),  var(--tcg_green));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 /* Animations */
 .tcg-bg-gradient {
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 300vw 300vh;
+    background-size: 200%;
     -webkit-animation: moveGradient 20s ease infinite;
     -moz-animation: moveGradient 20s ease infinite;
     animation: moveGradient 20s ease infinite;
