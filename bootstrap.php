@@ -1,6 +1,7 @@
 <?php
 
 use TightenCo\Jigsaw\Jigsaw;
+use samdark\sitemap\Sitemap;
 
 /** @var $container \Illuminate\Container\Container */
 /** @var $events \TightenCo\Jigsaw\Events\EventBus */
@@ -15,3 +16,16 @@ use TightenCo\Jigsaw\Jigsaw;
  *     // Your code here
  * });
  */
+
+$events->afterBuild(function($jigsaw) {
+    $baseUrl = $jigsaw->getConfig('baseUrl');
+    $sitemap = new Sitemap($jigsaw->getDestinationPath() . '/sitemap.xml');
+
+    collect($jigsaw->getOutputPaths())->each(function ($path) use ($baseUrl, $sitemap) {
+        if (!str_starts_with($path, '/assets')) {
+            $sitemap->addItem($baseUrl . $path, time(), Sitemap::DAILY);
+        }
+    });
+
+    $sitemap->write();
+});

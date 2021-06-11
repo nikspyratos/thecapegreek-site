@@ -8,6 +8,10 @@
         <title>{{ $page->title }} | {{ $page->head_title }}</title>
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
         <script defer src="{{ mix('js/main.js', 'assets/build') }}"></script>
+        <link rel="icon" href="/favicon.ico"><!-- 32×32 -->
+        <link rel="icon" href="/icon-192.png" type="image/svg+xml">
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png"><!-- 180×180 -->
+        <link rel="manifest" href="/manifest.webmanifest">
     </head>
     <body class="font-display text-tcg_dark antialiased bg-fixed tcg-bg-gradient">
         <div class="container mx-auto my-16 relative">
