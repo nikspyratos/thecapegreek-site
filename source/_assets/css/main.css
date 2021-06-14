@@ -29,6 +29,10 @@
         @apply transition ease-in-out font-bold text-tcg_blue hover:text-tcg_pink
     }
 
+    a::after {
+        /* link icon */
+    }
+
     #content a {
         @apply border-b-2 border-tcg_blue hover:border-tcg_pink
     }
@@ -57,12 +61,16 @@
         @apply text-lg text-tcg_purple
     }
 
-    h5 {
+    h4 {
         @apply text-sm text-tcg_crimson
     }
 
     h6 {
         @apply text-xs
+    }
+
+    hr {
+        @apply mx-32 mt-4 mb-8 text-tcg_pink border-dashed border
     }
 }
 

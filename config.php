@@ -79,5 +79,60 @@ return [
                 'url' => 'https://sacoronavirus.co.za'
             ]
         ]
+    ],
+    'communities' => [
+        [
+            'title' => 'ZATech',
+            'subtitle' => 'Member',
+            'description' => 'Slack group for the South African tech community',
+            'link' => 'https://zatech.co.za'
+        ],
+        [
+            'title' => 'PHP South Africa',
+            'subtitle' => 'Organiser',
+            'description' => 'Gathering South Africa\'s PHP Developers. Feel free to check drop by the next meetup!',
+            'imageLink' => '/assets/images/superbalist.svg',
+            'link' => 'https://superbalist.com'
+        ]
+    ],
+    'companies' => [
+        [
+            'title' => 'SABEN',
+            'subtitle' => 'Jan 2017 - Dec 2017',
+            'description' => 'ISP for South African Colleges',
+            'link' => 'https://saben.ac.za'
+        ],
+        [
+            'title' => 'TCT Digital',
+            'subtitle' => 'Feb 2018 - Dec 2019',
+            'description' => 'Developers of the Hey Jude app',
+            'link' => 'https://tct.digital'
+        ],
+        [
+            'title' => 'Superbalist',
+            'subtitle' => 'Jan 2020 - Nov 2020',
+            'description' => 'South Africa\'s #1 fashion e-commerce website',
+            'link' => 'https://superbalist.com'
+        ],
+        [
+            'title' => 'Car & Classic',
+            'subtitle' => 'Nov 2020 - Present',
+            'description' => 'Europe\'s #1 classic car & auctions website ',
+            'link' => 'https://carandclassic.co.uk'
+        ]
+    ],
+    'projects' => [
+        [
+            'title' => 'thecapegreek.co.za',
+            'subtitle' => 'You are here. See: recursion.',
+            'description' => 'Built with Jigsaw & Tailwind',
+            'link' => ''
+        ],
+        [
+            'title' => 'Personal cloud',
+            'subtitle' => 'Like Goku',
+            'description' => 'Self-hosted Nextcloud & Monica PRM using Ansible + Terraform',
+            'link' => ''
+        ]
     ]
 ];

@@ -43,7 +43,11 @@ module.exports = {
             inner: 'inset 0 2px 4px 0 rgba(0, 0, 0, 0.6)',
             none: 'none',
         },
-        extend: {},
+        extend: {
+            screens: {
+                '3xl': '2560px',
+            },
+        },
     },
     variants: {
         extend: {},
