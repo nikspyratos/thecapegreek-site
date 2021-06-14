@@ -25,6 +25,10 @@
         @apply text-tcg_dark
     }
 
+    body {
+        @apply bg-tcg_dark
+    }
+
     a {
         @apply transition ease-in-out font-bold text-tcg_blue hover:text-tcg_pink
     }
@@ -70,7 +74,15 @@
     }
 
     hr {
-        @apply mx-32 mt-4 mb-8 text-tcg_pink border-dashed border
+        @apply mr-96 mt-4 mb-8 text-tcg_pink border-dashed border
+    }
+
+    .hr-even {
+        @apply mx-96
+    }
+
+    .hr-right {
+        @apply ml-96 mr-0
     }
 }
 
@@ -106,7 +118,6 @@
 
 /* Colours */
 .tcg-bg-gradient {
-    background: rgb(133, 255, 199);
     /*background: -moz-linear-gradient(-45deg, var(--tcg_crimson), var(--tcg_radish), var(--tcg_purple), var(--tcg_blue), var(--tcg_light_blue), var(--tcg_green), var(--tcg_cyan));*/
     /*background: -webkit-linear-gradient(-45deg, var(--tcg_crimson), var(--tcg_radish), var(--tcg_purple), var(--tcg_blue), var(--tcg_light_blue), var(--tcg_green), var(--tcg_cyan));*/
     /*background: linear-gradient(-45deg, var(--tcg_crimson), var(--tcg_radish), var(--tcg_purple), var(--tcg_blue), var(--tcg_light_blue), var(--tcg_green), var(--tcg_cyan));*/

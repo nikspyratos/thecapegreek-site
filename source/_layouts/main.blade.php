@@ -13,7 +13,7 @@
         <link rel="apple-touch-icon" href="/apple-touch-icon.png"><!-- 180×180 -->
         <link rel="manifest" href="/manifest.webmanifest">
     </head>
-    <body class="font-display text-tcg_dark antialiased bg-fixed tcg-bg-gradient">
+    <body class="font-display text-tcg_dark antialiased bg-fixed bg-tcg_dark tcg-bg-gradient">
         <div class="container mx-auto my-16 relative">
             <div class="h-full shadow-lg rounded-xl">
                 @include('_partials.nav')

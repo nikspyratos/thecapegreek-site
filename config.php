@@ -106,7 +106,7 @@ return [
             'title' => 'TCT Digital',
             'subtitle' => 'Feb 2018 - Dec 2019',
             'description' => 'Developers of the Hey Jude app',
-            'link' => 'https://tct.digital'
+            'link' => ''
         ],
         [
             'title' => 'Superbalist',
@@ -126,7 +126,7 @@ return [
             'title' => 'thecapegreek.co.za',
             'subtitle' => 'You are here. See: recursion.',
             'description' => 'Built with Jigsaw & Tailwind',
-            'link' => ''
+            'link' => 'https://thecapegreek.co.za'
         ],
         [
             'title' => 'Personal cloud',

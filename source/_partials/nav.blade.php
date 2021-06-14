@@ -1,4 +1,4 @@
-<div class="w-full p-4 flex flex-col lg:flex-row justify-between bg-tcg_dark rounded-t-xl text-tcg_white">
+<div class="w-full p-4 flex flex-col lg:flex-row justify-between bg-tcg_dark border-tcg_pink border-b-2 rounded-t-xl text-tcg_white">
     <div class="w-1/3 flex flex-row space-x-4">
         <img class="w-24" src="{{ $page->nav->logo }}">
         <div class="flex flex-col self-center font-bold text-xl sm:text-2xl">
