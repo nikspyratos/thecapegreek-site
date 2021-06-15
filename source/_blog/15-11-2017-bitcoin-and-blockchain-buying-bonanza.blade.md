@@ -1,9 +1,10 @@
 ---
 title: 'Bitcoin and Blockchain Buying Bonanza'
-date: '15-11-2017'
+date: '15 November 2017'
+time: '14:30'
 description: 'My understanding cryptocurrencies in 2017.'
+order: 1
 ---
-
 
 ## **There's been a lot of buzz on the internet regarding Bitcoin & Blockchain recently, but not all of us know what it means. Here's my take on it and what you should know.**
 

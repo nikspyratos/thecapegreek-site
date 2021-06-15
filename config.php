@@ -10,7 +10,18 @@ return [
     'selected' => function ($page, $section) {
         return ($section == '/' && $page->getPath() == '') || ($section != '/' && Str::startsWith($page->getPath(), $section));
     },
-    'nav' => [
+    'collections' => [
+        'blog' => [
+            'path' => 'blog',
+            'sort' => '-order',
+            'extends' => '_layouts.post',
+            'section' => 'body'
+        ],
+        'thoughts' => [
+            'sort' => '-order'
+        ]
+    ],
+    'navigation' => [
         'logo' => '/assets/images/profile-rounded.webp',
         'title' => 'Nik Spyratos',
         'subtitle' => 'TheCapeGreek',
@@ -24,6 +35,11 @@ return [
                 'title' => 'Thoughts',
                 'name' => 'thoughts',
                 'url' => '/thoughts'
+            ],
+            'blog' => [
+                'title' => 'Blog',
+                'name' => 'blog',
+                'url' => '/blog'
             ],
             'projects' => [
                 'title' => 'Projects',
@@ -130,14 +146,6 @@ return [
             'subtitle' => 'Like Goku',
             'description' => 'Self-hosted Nextcloud & Monica PRM using Ansible + Terraform',
             'url' => ''
-        ]
-    ],
-    'collections' => [
-        'thoughts' => [
-            'path' => 'thoughts',
-            'sort' => 'date',
-            'extends' => '_layouts.post',
-            'section' => 'body'
         ]
     ],
 ];

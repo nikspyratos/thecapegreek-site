@@ -6,6 +6,6 @@
 
 <div class="flex flex-wrap flex-row my-8 {{ isset($centered) && $centered ? 'justify-center' : '' }}">
 @foreach($items as $item)
-    @include('_partials.item-card', ['item' => $item, 'cardSize' => $cardSize, 'borderColour' => $borderColour, 'transparent' => $transparent])
+    @include('_components.item-card', ['item' => $item, 'cardSize' => $cardSize, 'borderColour' => $borderColour, 'transparent' => $transparent])
 @endforeach
 </div>

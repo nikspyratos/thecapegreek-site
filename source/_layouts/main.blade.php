@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="canonical" href="{{ $page->getUrl() }}">
         <meta name="description" content="{{ $page->site_description }}">
-        <title>{{ $page->title }} | {{ $page->head_title }}</title>
+        <title>{{ $page->title }} | {{ $page->site_title }}</title>
         <link rel="stylesheet" href="{{ mix('css/main.css', 'assets/build') }}">
 {{--        <script defer src="{{ mix('js/main.js', 'assets/build') }}"></script>--}}
         <link rel="icon" href="/favicon.ico"><!-- 32×32 -->

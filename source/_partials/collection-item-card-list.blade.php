@@ -1,21 +1,24 @@
 @php
     $cardSize ??= 'w-1/3';
-    $bordercolour ??= 'tcg_blue';
+    $borderColour ??= 'tcg_blue';
     $transparent ??= false;
 @endphp
-@foreach($collection as $item)
-@include(
-    '_partials.item-card',
-    [
-        'item' => [
-            'title' => $item->title,
-            'subtitle' => $item->date,
-            'description' => $item->description,
-            'url' => $item->getPath(),
-        ],
-        'cardSize' => $cardSize,
-        'borderColour' => $borderColour,
-        'transparent' => $transparent
-    ]
-)
-@endforeach
+<div class="grid grid-cols-4 my-8 {{ isset($centered) && $centered ? 'justify-items-start' : '' }}">
+    @foreach($collection as $item)
+    @include(
+        '_components.item-card',
+        [
+            'item' => [
+                'title' => $item->title,
+                'subtitle' => $item->date,
+                'description' => $item->description,
+                'url' => $item->getPath(),
+            ],
+            'cardSize' => $cardSize,
+            'borderColour' => $borderColour,
+            'transparent' => $transparent,
+            'grid' => true
+        ]
+    )
+    @endforeach
+</div>
