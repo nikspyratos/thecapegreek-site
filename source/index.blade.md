@@ -1,11 +1,11 @@
 ---
-extends: _layouts.main
+extends: _layouts.page
 section: body
 permalink: index.html
 title: "Home"
 ---
 
-# Welcome to my website!
+## Welcome to my website!
 
 Heyo, I'm Nik. I'm a Greek-South African software developer currently based in Cape Town. This website is a space for me to write, play, and share ideas.
 

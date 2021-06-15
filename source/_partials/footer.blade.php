@@ -1,4 +1,4 @@
-<div class="w-full p-4 flex flex-wrap lg:flex-row justify-between bg-tcg_dark border-tcg_pink border-t-2 rounded-b-xl text-tcg_white">
+<footer class="w-full p-4 flex flex-wrap lg:flex-row justify-between bg-tcg_dark border-tcg_pink border-t-2 rounded-b-xl text-tcg_white">
     <div class="w-full lg:w-auto self-center justify-center flex flex-row font-bold text-center text-sm sm:text-lg divide divide-x-2 divide-tcg_grey">
         @foreach($page->footer->attributions as $attribution)
             <div class="{{ $loop->first ? 'pr-2' : ($loop->last ? 'pl-2' : 'px-2' )}}">
@@ -30,6 +30,6 @@
             @endif
         @endforeach
     </div>
-</div>
+</footer>
 
 
