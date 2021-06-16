@@ -8,7 +8,7 @@
         $borderClasses = '';
     }
 @endphp
-    <div class="flex flex-col {{ $sizeClasses }} flex flex-col mx-4 mb-4 {{ $borderClasses }}">
+    <div class="flex flex-col {{ $sizeClasses }} mx-4 mb-4 {{ $borderClasses }}">
     <h3>
         @if(!empty($item['url']))
             <a href="{{ $item['url'] }}">{{ $item['title'] }}</a>

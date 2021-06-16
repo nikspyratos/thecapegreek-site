@@ -41,11 +41,11 @@ return [
                 'name' => 'blog',
                 'url' => '/blog'
             ],
-            'projects' => [
-                'title' => 'Projects',
-                'name' => 'projects',
-                'url' => '/projects'
-            ],
+//            'projects' => [
+//                'title' => 'Projects',
+//                'name' => 'projects',
+//                'url' => '/projects'
+//            ],
             'reading' => [
                 'title' => 'Reading',
                 'name' => 'reading',
