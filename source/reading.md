@@ -4,7 +4,7 @@ section: body
 title: "Reading"
 ---
 
-Here are my all-time favourite books on all sorts of topics.
+These are my favourite books on all sorts of topics.
 
 ## Self Improvement
 
@@ -120,6 +120,8 @@ While this is *mostly* about running a company solo, it also caters to intrapren
 Radical Candor is oriented more toward leaders, but is very useful as a team member as well. By learning how to be direct and even explicit without going into being rude, you & your team can communicate with each other more effectively.
 
 ### MJ DeMarco - The Millionaire Fastlane & Unscripted
+
+These two books can be considered fairly similar, so I've put them both here. In these MJ DeMarco discusses at length ways to change your life from the status quo and his ideas on how to create wealth for yourself.
 
 ---
 

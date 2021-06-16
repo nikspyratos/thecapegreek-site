@@ -1,11 +1,11 @@
 ---
 title: 'What has the PHP Community Built?'
-date: '19 December 2020'
+date: '19 December 2019'
 description: 'A look at some interesting projects in the PHP community'
-order: 4
+order: 6
 ---
 
-*Originally for [24 Days in December](https://24daysindecember.net/)*
+*Originally for [24 Days in December](https://24daysindecember.net/2019/12/19/what-has-the-php-community-built/)*
 [2021 update: Site has been moved from Grav, despite what this article says]
 
 The PHP community is pretty large. It's easy to become isolated within the bubble of your chosen framework, version, or domain-specific code. Here's a look at some interesting PHP projects I've discovered over the years. Some of these are more well known than others, but all definitely deserve some love. Links to the websites will be in the headers.
