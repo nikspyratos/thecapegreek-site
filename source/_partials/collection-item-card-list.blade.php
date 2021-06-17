@@ -1,6 +1,6 @@
 @php
-    $cardSize ??= 'w-1/3';
-    $borderColour ??= 'tcg_blue';
+    $cardSize ??= 'lg:w-1/3';
+    $borderColour ??= 'border-tcg_blue';
     $transparent ??= false;
 @endphp
 <div class="grid grid-cols-4 my-8 {{ isset($centered) && $centered ? 'justify-items-start' : '' }}">

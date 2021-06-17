@@ -3,19 +3,19 @@
     if ($type == 'bottom') {
         $margin = '';
     }
-    $justify = 'between';
+    $justify = 'md:justify-between';
     if (isset($previous) && !isset($next)) {
-        $justify = 'start';
+        $justify = 'md:justify-start';
     }
     if (!isset($previous) && isset($next)) {
-        $justify = 'end';
+        $justify = 'md:justify-end';
     }
 @endphp
 
 @if($type == 'bottom')
     <hr>
 @endif
-<div class="flex flex-wrap flex-row justify-center md:justify-{{ $justify }} {{ $margin }}">
+<div class="flex flex-wrap flex-row justify-center {{ $justify }} {{ $margin }}">
     @if (isset($previous))
         <div class="w-full md:w-auto flex place-items-center justify-center">
             <div>
