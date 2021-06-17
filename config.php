@@ -5,8 +5,10 @@ use Illuminate\Support\Str;
 return [
     'production' => false,
     'baseUrl' => 'https://www.thecapegreek.co.za',
-    'site_title' => 'Nik Spyratos - The Cape Greek',
-    'site_description' => 'Personal & Professional website of Nik Spyratos, The Cape Greek.',
+    'siteName' => 'Nik Spyratos - The Cape Greek',
+    'siteDescription' => 'Personal & Professional website of Nik Spyratos, The Cape Greek.',
+    'siteAuthor' => 'Nikolaos Spyratos',
+    'siteLanguage' => 'en-gb',
     'selected' => function ($page, $section) {
         return ($section == '/' && $page->getPath() == '') || ($section != '/' && Str::startsWith($page->getPath(), $section));
     },
@@ -76,22 +78,28 @@ return [
         ],
     ],
     'footer' => [
-        'attributions' => [
+        'siteLinks' => [
             [
-                'text' => 'Built with',
-                'author' => 'Jigsaw',
+                'prefix' => '',
+                'text' => 'RSS',
+                'url' => '/rss.xml'
+            ],
+            [
+                'prefix' => '',
+                'text' => 'COVID-19',
+                'url' => 'https://sacoronavirus.co.za'
+            ],
+            [
+                'prefix' => 'Built with',
+                'text' => 'Jigsaw',
                 'url' => 'https://jigsaw.tighten.co'
             ],
             [
-                'text' => 'Unicons by',
-                'author' => 'Iconscout',
+                'prefix' => 'Unicons by',
+                'text' => 'Iconscout',
                 'url' => 'https://iconscout.com/'
             ],
-            [
-                'text' => '',
-                'author' => 'COVID-19',
-                'url' => 'https://sacoronavirus.co.za'
-            ]
+
         ]
     ],
     'communities' => [
