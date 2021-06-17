@@ -33,10 +33,6 @@
         @apply transition ease-in-out font-bold text-tcg_blue hover:text-tcg_pink
     }
 
-    a::after {
-        /* link icon */
-    }
-
     #content a {
         @apply border-b-2 border-tcg_blue hover:border-tcg_pink
     }
