@@ -1,5 +1,5 @@
 @foreach($thoughts as $thought)
-<div class="flex flex-col mx-4 mb-4 {{ $borderClasses }}">
+<div class="flex flex-col mx-4 mb-4">
     <h3>
         @if(isset($thought['url']))
             <a href="{{ $thought->url }}">{{ $thought->title }}</a>

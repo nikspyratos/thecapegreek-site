@@ -34,7 +34,7 @@ module.exports = {
         },
         extend: {
             screens: {
-                '3xl': '2000px',
+                '3xl': '2300px',
             },
             boxShadow: {
                 'bevel': "0 0px 0px 20px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 1)"

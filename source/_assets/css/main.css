@@ -74,11 +74,15 @@
     }
 
     hr {
-        @apply mr-72 mt-4 mb-8 text-tcg_pink border-dashed border
+        @apply mr-72 my-8 text-tcg_pink border-dashed border
     }
 
     .hr-even {
-        @apply mx-72
+        @apply mx-32
+    }
+
+    .hr-right {
+        @apply ml-72 mr-0
     }
 }
 
