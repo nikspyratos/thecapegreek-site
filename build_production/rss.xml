@@ -1,0 +1,669 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:media="http://search.yahoo.com/mrss/">
+    <channel>
+        <title>Nik Spyratos - The Cape Greek</title>
+        <link>https://www.thecapegreek.co.za</link>
+        <description><![CDATA[Personal &amp; Professional website of Nik Spyratos, The Cape Greek.]]></description>
+        <atom:link href="https://www.thecapegreek.co.za/rss.xml" rel="self" type="application/rss+xml" />
+        <language>en-gb</language>
+        <lastBuildDate>Sat, 19 Jun 2021 09:47:23 +0200</lastBuildDate>
+        <image>
+            <link>https://www.thecapegreek.co.za</link>
+            <title><![CDATA[Nik Spyratos - The Cape Greek]]></title>
+            <url>https://www.thecapegreek.co.za/icon-192.png</url>
+        </image>
+
+                <item>
+            <title><![CDATA[What has the PHP Community Built?]]></title>
+            <link>https://www.thecapegreek.co.za/blog/19-12-2020-what-has-the-php-community-built</link>
+            <guid isPermaLink="true">https://www.thecapegreek.co.za/blog/19-12-2020-what-has-the-php-community-built</guid>
+            <description><![CDATA[A look at some interesting projects in the PHP community]]></description>
+            <content:encoded><![CDATA[<p><em>Originally for <a href="https://24daysindecember.net/2019/12/19/what-has-the-php-community-built/">24 Days in December</a></em>
+[2021 update: Site has been moved from Grav, despite what this article says]</p>
+
+<p>The PHP community is pretty large. It's easy to become isolated within the bubble of your chosen framework, version, or domain-specific code. Here's a look at some interesting PHP projects I've discovered over the years. Some of these are more well known than others, but all definitely deserve some love. Links to the websites will be in the headers.</p>
+
+<p>Disclaimer: I'm not affiliated with any of these projects, but I do use a few of them.</p>
+
+<h2><a href="https://getgrav.org/">Grav CMS</a></h2>
+
+<p>Grav is an interesting alternative in the widespread CMS landscape. It's flat-file based instead of database reliant, which for simple websites makes getting from zero to deployed that much quicker. I even built my personal site with it!</p>
+
+<p>There is no installation process required to get up and running. You can extract a ZIP of the latest version and start slamming out content.</p>
+
+<p>Configuration and accounts are stored in YAML files in the system. Caching permeates Grav's design, speeding page delivery alongside JS &amp; CSS pipelining to only serve single JS/CSS files. Themes are made using the Twig templating engine and pages themselves are written with Markdown. It's a highly portable package.</p>
+
+<p>The plugin ecosystem is not as huge as other popular CMSes, but there are still quite a few plugins for all sorts of extra features.</p>
+
+<h2><a href="https://octobercms.com/">October CMS</a></h2>
+
+<p>October is a Laravel-based CMS, with a focus on simplicity of the user experience while still providing high-octane features for developers. I feel it's almost an understatement to call October a CMS, as it is a bit more involved than that.</p>
+
+<p>Like Grav, it uses Twig (with a few extensions) for templating instead of Laravel's Blade. This allows a lot of fine-grain control over what your final page will look like while also being designer-friendly. The interesting bit is that themes and pages are managed through the October backend itself, not needing to dive into code and deploy things constantly (though that is always an option).</p>
+
+<p>Installation/deployment of October is more akin to standard PHP systems, requiring certain PHP extensions and using a database. Like Wordpress, it has an installation wizard to make life easier.</p>
+
+<p>Personally, what I find interesting with October is the intersection of providing a clean and understandable UX for non-technical people involved in the process, and the flexibility of a framework like Laravel to customise almost any aspect of the system. On top of that, the developers are quite active in supporting the plugin ecosystem and have quite a few of their own "default" plugins for October for you to get started with.</p>
+
+<p>There's a lot more that I haven't mentioned here, so do take a look!</p>
+
+<h2><a href="https://matomo.org/">Matomo (formerly Piwik) Analytics</a></h2>
+
+<p>Of course, there's more to PHP life than CMSes. Matomo is a FOSS (GPLv3), fully-featured alternative to Google Analytics, and is quite proud of that fact. Their main method of income is support contracts and cloud hosting of the Matomo platform. However, you can self-host to get most of the feature set, save for more intricate features like A/B Testing and SAML integration.</p>
+
+<p>Matomo reports on your full data set instead of a subset of it. You also get the benefit of full control and ownership of the generated data, which allows you to do your own extra analytics on top of it and is generally a boon to more privacy conscious developers and users.</p>
+
+<p>Speaking of which, Matomo allows for GDPR compliance through a "GDPR Manager" which has features like anonymisation of data, right to erasure, deleting historical data, and more.</p>
+
+<p>Matomo is a huge system, but well worth the effort of installation if going the self-hosting route, and has various relatively affordable pricing tiers.</p>
+
+<h2><a href="https://www.monicahq.com/">Monica Personal CRM</a></h2>
+
+<p>Monica came to my attention some time in the latter half of 2018. It's essentially a personal rolodex for the web age, built with Laravel. Like Matomo, it's FOSS and free for self-hosting, but you can also sign up for the cloud-hosted version for simplicity.</p>
+
+<p>Now, if you use Facebook, your first thought about this is likely "why would I actually need this?", and it's a valid question. Then I'd ask you to consider how much you actually use Facebook to track information on your friends (aside from just their birthday) and not just for an endless feed of posts and memes.</p>
+
+<p>Monica is not a social network. It is purpose-built for managing your relationships and storing information that you want to remember on your friends and family. You can store anything from relations between contacts, pets, debts owed or tasks related to a person from its interface.</p>
+
+<p>From its own website, Monica claims it <em>"is for people who have jobs, a family, and are busy trying to find a good work/life balance. So busy, that they don’t have time anymore to remember to call a friend, say happy birthday to a nephew, or remember to invite someone special for dinner next week. The older we get, the more life gets in the way. It’s sad, but it’s the reality."</em></p>
+
+<p>If you're keen to try it out but aren't quite sure, you can sign up for free on the cloud version to try it out.</p>
+
+<h2><a href="https://nextcloud.com/">Nextcloud</a></h2>
+
+<p>Here we have another FOSS alternative product to a Google service, in this case mainly Google Drive and tools like Google Calender. As has become a pattern now, self-hosting Nextcloud is free, but you can pay for support or cloud/managed hosting. There are also client apps for all mobile and desktop platforms.</p>
+
+<p>On top of the standard storage system, you can also get calendar, mail, contacts, and video calling. For more cool stuff, its plugin ecosystem is actually surprisingly well-rounded.</p>
+
+<p>Nextcloud also offers extensive documentation related to its GDPR compliance and guides for administrators, as well as plugins for aid compliance available for your server.</p>
+
+<p>I highly recommend Nextcloud for those who would prefer full control and data privacy for their cloud system, or businesses requiring the same control. Installing Nextcloud is fairly straightforward and there are many guides out there to get started with.</p>
+
+<h2><a href="https://www.kimai.org/">Kimai Time Tracking</a></h2>
+
+<p>Kimai is an open source (MIT) time tracking system. In the last year, Kimai has essentially been rebuilt (in Symfony), and its UI redone in the official v2. If any of you have seen the old v1 UI, you'll agree that using AdminLTE for the dashboard is a <strong>vast</strong> improvement over the previous UI. The old UI was quite dated and made me gloss over Kimai originally since I wasn't even sure if it was still actively supported.</p>
+
+<p>The use of AdminLTE also means that Kimai is mobile-friendly as an added bonus. Unfortunately (or fortunately for some), Kimai only has a self-hosted option available. Kimai's main income source is extra plugins available on its marketplace. However its default feature set is already quite robust, including a JSON API for app integrations, LDAP support, switching between start/end time and duration-only modes.</p>
+
+<p>Usually features like that aren't restricted on other time trackers, but you'll be capped on user accounts on free tiers and usually have to pay per user. Kimai naturally offers free as in beer and free as in freedom in this case.</p>
+
+<p>If you're looking for a viable, free alternative for something like Harvest or Toggl, Kimai is definitely the way to go.</p>
+
+<h2><a href="https://www.attendize.com/">Attendize</a></h2>
+
+<p>Last, we come to Attendize. Attendize is an open source (AAL) event management and ticket selling platform. Another Laravel-based app, it is a fully-fledged system. The Attribution Assurance License essentially boils down to requiring "Powered By Attendize" to be displayed on all pages, but this and other restrictions (redistribution and using in SaaS products) can be removed by purchasing a license.</p>
+
+<p>Stripe and Paypal are supported out of the box, and other integrations can be added. Omnipay is used as the payment proccessing system. Among Attendize's many features are affiliate tracking, widget sharing (for inclusion on other websites), a browser based QR scanner for door management, and easy attendee management (including messaging via email).</p>
+
+<p>There's an online demo of the system available on the website. The UX is fairly smooth and displays the exact information you need. Overall, it's a healthy balance of no-nonsense yet having the ease-of-use you'd expect of a system like this.</p>
+
+<hr />
+
+<p>While writing this post, I've come to realise you could self-host most tools required to run many businesses these days, from time tracking to analytics to business cloud. It's truly staggering how much there is out there in PHP land for us to make the most of. I hope you've found some interesting new tools to play with from this post. Enjoy!</p>
+]]></content:encoded>
+            <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nikolaos Spyratos</dc:creator>
+            <pubDate>Thu, 19 Dec 2019 00:00:00 +0200</pubDate>
+            <media:content
+                    medium="image"
+                    url="https://www.thecapegreek.co.za/assets/images/profile-rounded.webp"
+                    type="image/jpeg"
+                    width="150"
+                    height="148" />
+        </item>
+                <item>
+            <title><![CDATA[PHP Decade in Review]]></title>
+            <link>https://www.thecapegreek.co.za/blog/18-11-2019-php-decade-in-review</link>
+            <guid isPermaLink="true">https://www.thecapegreek.co.za/blog/18-11-2019-php-decade-in-review</guid>
+            <description><![CDATA[A quick review of big changes to PHP in the 2010s.]]></description>
+            <content:encoded><![CDATA[<p><em>Originally presented at <a href="https://www.meetup.com/Cape-Town-PHP-Group/events/266226390/">PHP Cape Town on November 18, 2019</a>. Script is in its original form.</em></p>
+
+<h2>Intro</h2>
+
+<p>Hey everyone. My name is Nik. Tonight I'll be talking about where we've come in the PHP community in the last decade. I'm sure some of you have had the following situation: You meet a new person and tell them you're a developer. They ask what you code in. You say PHP. They snicker or give some version of "my condolences". Or you just generally see people ripping into PHP and everything that is built on it.
+Why does this happen? Why does PHP have such a bad reputation outside of the community? Have any of the usual arguments changed or faltered in the last decade? That's what I want to quickly explore tonight. This isn't going to be a code heavy talk because honestly it's Monday and we all write enough code.</p>
+
+<h2>It's like an ex we keep going back to</h2>
+
+<p>To understand what has happened in the last 10 years, you also somewhat need to know how it all started. PHP was created in 1994 by Rasmus Lerdorf as essentially a collection of helper functions for building simple dynamic web apps, and was called "Personal Home Page/Forms Interpreter" or PHP/FI.</p>
+
+<p>On PHP's wiki page you'll see a quote by Lerdorf saying he never intended to build a language; instead it just kind of grew organically.</p>
+
+<p>This lack of concrete design from the ground up is what I think the source of all the complaints of PHP stem from. However, PHP is still incredibly easy to pick up and get running with, so its popularity grew in spite of its detractors.</p>
+
+<p>Back to the 2010s.</p>
+
+<p>PHP was still the go-to language for writing something on the web. It was very easy to set up on web servers and had a good variety of solutions for a lot of 2010 problems: Bulletin Boards, Wordpress, Magento. Hell, even Facebook was founded on PHP. To this day it's estimated that most websites out there are using PHP. While this isn't a problem in and of itself, most of those sites are using old, unsupported versions. PHP 5 was released in 2004 and 5.6's support only ended December 2018. Xneelo (formerly Hetzner SA) broke several websites a month or two ago because they had announced prior that they'd eventually be forcing an upgrade to php 7 and finally did it. They had even offered help in upgrading to their users.</p>
+
+<p>So despite the great ease of setting up the servers and writing code for it, we had a few problems: For the most part there was no structured language design, most sites were using insecure versions, and since it was so easy to get into, people could write terrible code with it and it would still work. These and other issues were starting to wear some people down.</p>
+
+<h2>A Fractal of Bad Design</h2>
+
+<p>Cut to Monday, 9 April 2012. A user by the name of Eevee had had enough. They made a blog post to vent. If you're a PHP dev and haven't read that article, it's worth checking out. When it came out I was still in grade 10, so I didn't get to it until 2017. At the time of its release, PHP had just released version 5.4 a month prior. The article starts with a preface I'm sure we can relate to:</p>
+
+<p>"I’m cranky. I complain about a lot of things." And that's exactly what happens for the next 9,427 words.</p>
+
+<p>Further down, "But I’ve got to get this out of my system. So here goes, one last try."</p>
+
+<p>Now, the article is quite long so I won't go into it at depth. Its initial Stance section summarises things well. It asserts that PHP is unpredictable, inconsistent, inconcise, unreliable, and undebuggable, with definitions for each of these in the context of the article. Whether or not you agree with any of those points is up to you if you go and read it.</p>
+
+<p>That blog post became the go-to source of truth if someone asks "why is PHP bad?" If you search for the title, you'll get tons of questions and supporting articles around it. I believe this is the point where it became <em>really</em> cool to hate on PHP, just like with JavaScript today.</p>
+
+<h2>Along came a Hack</h2>
+
+<p>Of course, one blog post is not going to tear down what is essentially a web empire. The PHP development team kept chugging along, PHP 5.5 and 5.6 came and went, with improvements in exactly those five factors mentioned in a Fractal of Bad Design. But some of those features weren't things people really cared about. Meanwhile, Facebook had been cooking something in their wizard towers. In March 2014 they released Hack, a new programming language designed to interoperate seamlessly with PHP. The initial intent was to give more structure to PHP code, while deprecating more unused features they disagreed with. Its main claim to fame was static typing and what amounted to a local linter so you wouldn't test in the browser as much.</p>
+
+<p>When I first learned about Hack, it seemed the hype around it was mostly that it would take over PHP and steer the community in a better direction by fixing all the problems they deemed more important than what the core PHP team was doing at the time.</p>
+
+<p>It's been 5 years since Hack came out, and personally I haven't seen any big usage of Hack. Using builtwith.com I could see that there were only 2800 live sites using it and only 2 in South Africa. I think it's safe to say that Hack hasn't had the traction some would have hoped. Maybe it'll have an uptick in the future. but back to PHP.</p>
+
+<h2>What has changed?</h2>
+
+<p>So, for those who haven't yet noticed because the decade just flew them by, it's not 2012 or 2014 anymore. There have been many changes and new features introduced to PHP, arguably fixing a large chunk of the complaints from the 5.4 days.</p>
+
+<p>Composer came along in 2012, providing a more modern dependency management interface instead of PEAR.</p>
+
+<p>PHP 7.0 came out in December 2015 and introduced quite a few new features, bugfixes and removed other things. The changelog is lengthy and clearly shows that between 5.4 and 7.0 there was a directed effort to improve PHP for the modern era.
+We got things like return type declarations, anonymous classes and finally replacing many old PHP Error instances with proper Exceptions. 7.1-7.3 have also introduced more features in the direction of static typing, like a void return type and object parameter/return type hinting.</p>
+
+<p>Of course, some of this is too little too late for some people to change their views on PHP. The more important part is PHP is still a very lively and growing language. Otherwise we wouldn't be here or this is secretly Liam's containment center for us to learn something else.</p>
+
+<h3>Whatever happened to PHP 6.0?</h3>
+
+<p>Now, I did skip PHP 6. But of course, that's because PHP 6 never happened. There were discussions around it in 2005 already, and supposedly books claiming to cover it in 2008, before it was even supposed to be released. PHP 6 was essentially the testing ground meant to bring the serious changes to the language that we later got in 7+. One of the core changes was unicode support through the entirety of the PHP stack. However in development of that support there were constant problems like poor performance and breaking scripts.</p>
+
+<p>PHP6's development eventually stalled from its constant issues related to Unicode support, but blocking other features from being released isn't ideal. So some work was backported to 5.3. Now with essentially 2 versions of the language, there was more work to do and support. Then after some light drama with the development stalling, PHP6 was relegated to a development branch and eventually abandoned entirely while PHP 5.4 went along.</p>
+
+<h2>What of the frameworks?</h2>
+
+<p>Earlier I mentioned PHP had a lot of different frameworks and prebuilt solutions. These all contributed to the lack of momentum in adopting newer PHP versions because on top of upgrading your server and code, you might have had breaking changes in the framework itself that need to be accounted for. This isn't to throw shade on framework contributors, as that work certainly isn't easy.
+In my experience, people generally don't like having fix something that isn't yet broken, so a lot of major services are still to this day using old framework versions like Laravel 4 or the countless number of outdated Wordpress installations which I'm sure the Wordpress peeps around here can attest to.</p>
+
+<p>Of course, things at the so-called "cutting edge" aren't as bad in terms of requirements and support. Wordpress currently recommends PHP 7.3 and Laravel as of 6.0 requires PHP 7.2.</p>
+
+<h2>Still a Fractal, but a prettier one</h2>
+
+<p>Is PHP still a "Fractal of Bad Design"? I don't think so. Many became (rightfully) fed up with the ecosystem in the early 2010s. Since then we've seen large improvements in the last 4 years alone, despite the detractors. Hack fell flat and we've kept chugging along. The PHP ecosystem is still large, active and varied. Whenever I see someone outside the community find out about the size and activity of the Wordpress or Laravel ecosystem, they're surprised.</p>
+
+<h2>What of the future?</h2>
+
+<p>The PHP team isn't stopping here. In 10 days PHP 7.4 will release, which will bring static type declaration for class properties and opcache preloading. After that, PHP 8.0 is scheduled for late 2020 which, among other things, will bring JIT. If you're still stuck on 5.6 or 7.0, it's really time to upgrade.</p>
+
+<p>For a longer list of upcoming features, check the PHP website or wikipedia page.</p>
+
+<p>The next decade of PHP is certainly going to be an intresting one. Hope to see you guys there.</p>
+
+<h2>Outro</h2>
+
+<p>Thanks for coming to my not-TED talk.</p>
+]]></content:encoded>
+            <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nikolaos Spyratos</dc:creator>
+            <pubDate>Mon, 18 Nov 2019 00:00:00 +0200</pubDate>
+            <media:content
+                    medium="image"
+                    url="https://www.thecapegreek.co.za/assets/images/profile-rounded.webp"
+                    type="image/jpeg"
+                    width="150"
+                    height="148" />
+        </item>
+                <item>
+            <title><![CDATA[Introduction to Laravel Telescope]]></title>
+            <link>https://www.thecapegreek.co.za/blog/28-01-2019-introduction-to-laravel-telescope</link>
+            <guid isPermaLink="true">https://www.thecapegreek.co.za/blog/28-01-2019-introduction-to-laravel-telescope</guid>
+            <description><![CDATA[Playing around with the then-new Laravel Telescope.]]></description>
+            <content:encoded><![CDATA[<p><em>Originally presented at <a href="https://www.meetup.com/Cape-Town-PHP-Group/events/258058986/">PHP Cape Town on January 28, 2019</a>. Script is in its original form.</em></p>
+
+<h2>Introduction</h2>
+
+<p>Good evening all. Hope you all had a good holiday. I’m Nik Spyratos. Tonight I’ll be speaking about Laravel Telescope, how to get it running and what you can do with it. It’s a new tool that’s worthy of consideration for every Laravel developer’s arsenal.</p>
+
+<p>Telescope was released in beta in October 2018 after being announced at Laracon Australia, built by Mohamed Said and Taylor Otwell. The best short overview is from the documentation itself:</p>
+
+<p><em>Laravel Telescope is an elegant debug assistant for the Laravel framework. Telescope provides insight into the requests coming into your application, exceptions, log entries, database queries, queued jobs, mail, notifications, cache operations, scheduled tasks, variable dumps and more. Telescope makes a wonderful companion to your local Laravel development environment.</em></p>
+
+<p>Telescope does a tremendous amount of things for you right out of the box. It can monitor and log pretty much any aspect of your application, though my personal favourite feature is that it has a built-in dark mode.
+Now of course, some aspects of Telescope are already covered by other packages for Laravel, like Horizon for Redis queues and Debugbar. However there are naturally some differences. Horizon is a monitoring and configuration tool for Redis queues only and Debugbar is, as its name implies, for debugging. Telescope on the other hand is intended to essentially be your application’s own private stalker, tracking its every move, and can be used in your production environment if so desired.</p>
+
+<p>A large advantage that Telescope provides is that you don’t have to write your own custom monitoring code in each of your applications anymore, which will save you a lot of time and effort and allow you to only have to worry about your core business logic instead of monitoring it as well.</p>
+
+<h2>Installation</h2>
+
+<p>Before we get to installation, just note that you do need to be using Laravel 5.7.7 and up. It’s worth the upgrade I feel, though depending on the changes and how far back your application is it might take a while.
+Installing Telescope is very straightforward. You have to run 3 commands in your console:</p>
+
+<blockquote>
+  <p>composer require laravel/telescope
+  php artisan telescope:install
+  php artisan migrate</p>
+</blockquote>
+
+<p>There are some extra things you can do in the configuration (which can be found in the documentation), but for the general use case it’s not needed.</p>
+
+<p>By default, telescope exposes a dashboard at <code>/telescope</code> of your application, but for local environments only. To enable authorized access only for the dashboard, there is a gate method in the TelescopeServiceProvider which controls access to Telescope for non-local environments. You have to modify this appropriately according to the authorization scheme for your application.</p>
+
+<h2>Usage</h2>
+
+<h3>What to log</h3>
+
+<p>You can filter what exactly Telescope will watch and log for you in the service provider’s register method. For local environments, it will watch everything by default, and for others it’ll only watch exceptions, failed jobs, scheduled tasks and data with monitored tags.</p>
+
+<p>Telescope gathers application data for requests and console commands through its watchers. Currently, there are 15 different watchers which cover the majority (if not all) of most Laravel applications. These are represented by their respective tabs in the dashboard. I’ll only be going through some of the ones I feel are the most notable, and you can check out the rest in the Laravel documentation.</p>
+
+<h3>Watchers</h3>
+
+<h4>Request</h4>
+
+<p>The requests tab is fairly self-explanatory. You can view all of the HTTP requests that come into your application, and inspect them in their entirety (payload, headers, response). If you’ve built APIs with Laravel (which I suspect a lot of us here have) then you’ll know that having this here saves a fair bit of time when debugging request issues or user bug reports.</p>
+
+<p>There is a very nifty feature here with the Request watcher and others. Any associated (for lack of a better term) events that are watched by Telescope (logs, queries, mail, etc) that occurred as part of the request, will be linked here. This way you don’t have to bounce from tab to tab and you can view the client-server transaction in its entirety. Again, very useful for debugging, especially in the API context.</p>
+
+<h4>Command</h4>
+
+<p>In the Command tab you’ll see the commands that have been run in the console in your application, along with their exit codes. On an individual level you’re able to view arguments, options given and like with Requests, associated events like logging and so on.</p>
+
+<h4>Dump</h4>
+
+<p>The dump tab in Telescope is very unique. If you have the dump screen open in Telescope, any dump() method calls in your application will be displayed in Telescope and not in the actual application output. This allows you to neatly dump data without messing with your standard page load. Once you leave the dump screen your dumps will appear in in your page again.</p>
+
+<p>This is personally one of the features I’m most intrigued by. I feel it’s a creative use of the Symfony Var-Dump Server, to embed it in a page.</p>
+
+<h4>Exception</h4>
+
+<p>What would an application monitoring tool be without exception monitoring? Here, all exceptions are logged and you can inspect each. Like other tabs related data will be linked here such as the associated request. If the same exception occurs multiple times, it’ll be grouped on the list page to save some space but you can still view the individual ones.</p>
+
+<h4>Job</h4>
+
+<p>The jobs tab shows past and currently running jobs. It’s similar to Horizon in the viewing aspect, but works with all queue drivers. You can view which connection and queue a job has used, its status and when it occurred. On the individual job’s page you’ll see specific details like number of tries, timeout, tags, and associated information (models, mail, etc).</p>
+
+<h4>Logs</h4>
+
+<p>The logs tab will should you the basic log message, its level and when it happened. Individually, you’ll see the rest of the log item’s details. If passing log context details as well, you can see all that data too, like the request that triggered the log and which user triggered it. This is much faster and simpler than digging through log files on a server.</p>
+
+<h4>Mail</h4>
+
+<p>Here you’ll see a list of emails sent, their recipients, send date, whether it is queued and when the queue fired it out. On the individual email you can even preview the email and download a raw .eml file of it to view in a specific email client. Anyone here who has tried to do email formatting that works in all major clients knows how immense a struggle this is, so this is a great help.</p>
+
+<h4>Model</h4>
+
+<p>On the models tab you can view all your create update delete events, which changes were made on each, and other details such as which job this occurred on and the model action’s tags. There’s not much else to explain for this one, however I’ll note that this tab will come in very handy if you don’t already track which changes are made to your model with something like Event Sourcing in place.</p>
+
+<h4>Queries</h4>
+
+<p>Next, your application queries. You can view how long they took, the full query itself, which request triggered it, and so on. There’s also a configurable boundary in the service provider for what a “slow” query is considered as, and all queries that are above that boundary will be tagged as slow and marked red. The search bar here can help with identifying these slow queries. Very handy when you’re trying to optimise your application as often the database and certain queries are the biggest bottlenecks.</p>
+
+<p>That’s all of the watchers I’ll talk about tonight. Next there are some some extra configuration options you get with Telescope that we’ll go into.</p>
+
+<h3>Configuring Telescope for your needs</h3>
+
+<p>You’ll notice that I mentioned monitored tags once or twice in relation to the watchers. By clicking the radar button and starting to monitor a certain tag (for example User:1), in production you’ll see requests and other items that wouldn’t ordinarily be logged for that tag.</p>
+
+<h4>Data pruning</h4>
+
+<p>Now, recording even a subset of all the watcher data will have things pile up pretty quickly for any amount of users. That’s why Telescope has a scheduled job to prune data older than a certain amount of hours, which is configurable in the telescope config file. Additionally, there is a <code>TELESCOPE_LIMIT</code> env variable that is 100 by default. This means Telescope will keep 100 entries of each watcher. You can even disable specific watchers entirely to save even more space and time.</p>
+
+<p>I’d recommend using a separate database connection for Telescope. This way your application won’t hammer your main database with Telescope’s data. And, while I haven’t tested this yet, I’m sure you can use Telescope’s watchers on one Laravel application to save on a separate database connection, and then have a second Laravel application using the same connection just for viewing the data. By doing this you can separate your concerns greatly and monitor multiple applications that rely on the same data.</p>
+
+<h2>Concluding</h2>
+
+<p>Telescope’s announcement was quite the news a few months ago, as it was essentially an early Christmas present for Laravel developers, which expanded on the already large and diverse Laravel ecosystem. I’d recommend trying it out even if you don’t immediately see a need or use for it for your applications.</p>
+
+<p>There’s naturally aspects that I didn’t dive too deep into here this evening, and I’d suggest you all take a look at the documentation for Telescope and some articles on using it. Thanks for listening.</p>
+]]></content:encoded>
+            <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nikolaos Spyratos</dc:creator>
+            <pubDate>Mon, 28 Jan 2019 00:00:00 +0200</pubDate>
+            <media:content
+                    medium="image"
+                    url="https://www.thecapegreek.co.za/assets/images/profile-rounded.webp"
+                    type="image/jpeg"
+                    width="150"
+                    height="148" />
+        </item>
+                <item>
+            <title><![CDATA[Introduction to Grav CMS]]></title>
+            <link>https://www.thecapegreek.co.za/blog/25-10-2018-introduction-to-grav-cms</link>
+            <guid isPermaLink="true">https://www.thecapegreek.co.za/blog/25-10-2018-introduction-to-grav-cms</guid>
+            <description><![CDATA[An overview of Grav CMS.]]></description>
+            <content:encoded><![CDATA[<p><em>Originally presented at <a href="https://www.meetup.com/Cape-Town-PHP-Group/events/258058986/">PHP Cape Town on October 25, 2018</a>. Script is in its original form.</em></p>
+
+<h2>Introduction</h2>
+
+<p>Hey all. My name is Nik. Tonight I'll be presenting a short introduction to Grav CMS, on how it works and some cool things you can do with it. I host my notoriously unattended blog on it which I’ll show a link to later. So let’s get started. I’m really not a salesman or trying to sell anyone on this, I just find it a cool system to use and a breath of fresh air for the times I get tired of working with the bigger CMSes out there.</p>
+
+<h2>The marketing blurb version</h2>
+
+<p>of what Grav is is a “fast, simple, and flexible file-based web platform”. Now that’s a pretty dense way of describing a system and could apply to a lot of things really. What it means here for Grav specifically is that performance and simplicity of use are two of the most important concepts that shape what it does and how it does it.</p>
+
+<p>There are quite a lot of Open Source CMSes out there for building complex websites (your Wordpress, Joomla, Drupal, etc). However building on these platforms gives you some pretty locked-in knowledge of specifically how that platform works and not much else. Not to say you’re not learning anything useful by using those but sometimes you don’t want to specialise in these things and just want to get a darn website up and running.</p>
+
+<h2>How Grav keeps it simple</h2>
+
+<p>is that there is no installation process required to get up and running. You can extract a ZIP of the latest version and start slamming out content. Next, there are no databases required to use it as it is flat-file based. All configurations are stored in the system. You can always use a DB later on with plugins if you still need to.</p>
+
+<p>From its own description, the architecture is built with the intention of using established and so-called “best-in-class” technologies. This is also how the zero-install and flat-file design are achieved. The core technologies used in Grav are:
+• Twig templating engine (which if you’ve used Laravel/Blade it’s pretty similar, though I prefer Blade)
+• YAML for configuration storage
+• Markdown for page content
+• Doctrine Cache
+• Symfony Console for CLI</p>
+
+<p>Naturally there are several others but those are the most important ones for what I’ll be covering.</p>
+
+<h3>Twig</h3>
+
+<p>Is a templating engine that some of you are probably familiar with of you’ve worked with Drupal or Symfony.</p>
+
+<p>The short version for those that might not know is that you use it to make reusable page templates with it that a given page type (e.g. home page, blog post list, or individual components like a navigation bar) can use. I’ve worked a fair bit more in Blade myself, but there are some core differences.</p>
+
+<p>Twig has some extra features added on like a sandbox mode where you can play with untrusted templates. Additionally, instead of replacing the control structures used with equivalent PHP code like in Blade, Twig compiles the structures with a Lexer and parses everything.</p>
+
+<p>On the security side of things, Twig also limits which functions can be used in the template to those that you explicitly enable. For example, you can’t explicitly use Facades in a view (e.g. User::where(‘active’) ) without adding them to a config list first. This can end up being more work to get data out to the view but it also allows you to limit what your template designer can do in the cases where you’d need to.</p>
+
+<h3>YAML</h3>
+
+<p>YAML is one of those recursive acronyms, standing for “YAML Ain’t Markup Language”. It’s intent is to be a human-readable data serialization standard. The really quick way to describe it is imagine if JSON used whitespace instead of braces, which depending on your opinion on Python is either a really good thing or a really annoying thing.</p>
+
+<h3>Markdown</h3>
+
+<p>We should all here at least know what Markdown is even if we don’t use it. It’s a lightweight markup language with plain text formatting syntax. I’m sure we’ve all run into cases where you think your CMS’s WYSIWYG editor will be enough to get some page content done all neat and tidy but you’ve had to end up using the HTML editor and made some pretty ugly HTML code as a result.</p>
+
+<p>Grav uses Markdown in an interesting way. The first part of any MD page will be a YAML header denoted by --- at the top and bottom of it. This way you can have all your post metadata and extra variables available at any time for the template to use, and with Grav’s admin backend you can modify the headers as you like as well. Most of these are automatically generated for you (e.g. blog post category, creation date, page title) during the page creation process but if one of your templates needs some other fancy variable to get something working on it you can add it yourself.</p>
+
+<p>If however you don’t want to make your pages in Markdown, you actually have the option of writing them in Twig as well.</p>
+
+<h3>Caching</h3>
+
+<p>Caching is something that permeates Grav’s system options. It uses the Doctrine Cache library, which supports several drivers like redis, memcached and so on.</p>
+
+<p>Grav’s approach to caching allows you to customise pretty much any caching option from the admin panel directly without having to fiddle with anything on the server itself. You can toggle caching of every type of page asset. Twig, CSS, JS, images, even the output page itself.</p>
+
+<h3>Grav CLI</h3>
+
+<p>Grav has it’s own CLI (using Symfony Console) which you can use for several administrative tasks like clearing the cache and making backups. It can also make use of CLI-specific plugins so the world is really your oyster with this system.</p>
+
+<p>Included in this CLI is Grav’s own package manager (because of course we can never have enough package managers) for installing plugins. For those not so CLI-inclined there is also a plugin installer available on the admin dashboard.</p>
+
+<h3>A peek at the admin interface</h3>
+
+<p>When first log into your admin dashboard on Grav you’re greeted by a clean and simple page that’ll show you some useful statistics about your site, including current version, last backup date, site visit statistics and notifications from the Grav dev team. From there it’s pretty straight forward and you’ll be able to go to your site configuration, pages, plugins, themes or site tools.</p>
+
+<h4>Site Configuration</h4>
+
+<p>There’s not much to elaborate on here. You change your site settings here. There are high level options like home page, date format and redirect settings, and then your more advanced options like caching, CSS/JS pipelining (where all a page’s CSS/JS assets will be compiled into one CSS/JS file) and a whooole lot more. What’s also useful here is there is an Info tab where you can view things like PHP-specific settings, which can be nice if you’re debugging.</p>
+
+<h4>Pages</h4>
+
+<p>From here obviously you’re able to view and modify your pages. The way pages are stored in Grav is you’ll have a folder with your page’s name, and in that folder will be a markdown file named after the page type. So for example on my site a blog post page has a “post” page type, where the folder will contain a post.md file. For container pages like a post list, it becomes a tree-like structure where your post list (e.g. Blog) folder will then contain the individual item folders. If there’s custom data in your container page it will also have its own markdown file for that data so you don’t lose that flexibility if you need it.</p>
+
+<p>On the individual page editor you’ll get your standard WYSIWYG/MD editor and metadata options. The fun part comes in the advanced options. There you can change things like the parent (containing) page, the page’s template, and most importantly there are override settings available where you can override certain things like the caching and which rendering process is used (MD or Twig) to load the page.</p>
+
+<h4>Plugins</h4>
+
+<p>Now, when we consider whether or not to use a CMS often times a large part of that decision comes down to the amount of plugins available for the system. I’m fairly certain that for a large chunk of use cases, Grav has more than adequate plugin support. As of right now there are about 270 plugins available to install and use. Now, those are obviously incredibly tiny numbers compared to the big name competitors, but a lot of core options are supported. The Grav dev team has made quite a few plugins themselves, like OAuth2, git sync, and even a Snipcart plugin for working with e-commerce sites.</p>
+
+<p>Otherwise I’ve found some pretty neat plugins like RSS feed generation, codepen embedding, and automatic SEO. If you’re interested in Grav then I’d say take a dive into the plugins page and you’ll probably find something cool to play with.</p>
+
+<p>The main way to install plugins is either by fetching them through the admin interface or by using the CLI. Of course you can upload them yourself but that’s a bit of a waste of time.</p>
+
+<h4>Themes</h4>
+
+<p>Like with other CMSes, your themes determine a lot about the site you can build depending on the page or template types available. Grav’s theme availability is like expected small, but pretty robust. On my site I used the Medium theme and tweaked the CSS to turn it into a dark theme version.</p>
+
+<p>Making a theme for Grav is pretty easy. Since it’s all Twig-based you can very easily and quickly set up your partial templates and components and make unique page types to base your application on.</p>
+
+<h4>Tools</h4>
+
+<p>Lastly there is the site tools page on the dashboard, which currently just provides two more options for installing themes and plugins: direct ZIP upload or by remote URL.</p>
+
+<h2>Closing</h2>
+
+<p>That’s pretty much Grav in a nutshell. In my opinion Grav is a fun and lightweight system to play around with, and you can do some pretty cool things with it. I won’t say it’s groundbreaking or “the next big thing” because in the end it’s up to the individual if they like it and want to use it or not. If you want to check out Grav and some sites built with it, head on to getgrav.org. While searching for sites built in Grav I found the site I used to make the slides for this, slidecraft.com. Good luck and happy tinkering.</p>
+]]></content:encoded>
+            <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nikolaos Spyratos</dc:creator>
+            <pubDate>Thu, 25 Oct 2018 00:00:00 +0200</pubDate>
+            <media:content
+                    medium="image"
+                    url="https://www.thecapegreek.co.za/assets/images/profile-rounded.webp"
+                    type="image/jpeg"
+                    width="150"
+                    height="148" />
+        </item>
+                <item>
+            <title><![CDATA[Is Privacy Dead? Part 2: Protecting yourself online]]></title>
+            <link>https://www.thecapegreek.co.za/blog/15-12-2017-is-privacy-dead-part-2</link>
+            <guid isPermaLink="true">https://www.thecapegreek.co.za/blog/15-12-2017-is-privacy-dead-part-2</guid>
+            <description><![CDATA[An article on privacy, tracking, and echo chambers.]]></description>
+            <content:encoded><![CDATA[<h3>As promised, here's Part 2 of my privacy post.</h3>
+
+<h4>In Part 1 I discussed how these days we are tracked in almost every which way possible, with an ever-increasing amount of ways being viable due to new data sources and better learning algorithms.</h4>
+
+<p>These algorithms not only track and learn from us, but have started creating ideological echo chambers for all of us to fall into. Let's look at ways to protect one's self from online tracking. There aren't set steps to doing it, but rather categories of things to look out for. Most tracking happens in your web browser, so that's where I'll be focusing on. I'll be linking to plugins for you to add to Firefox and/or Chrome throughout.</p>
+
+<h4>Step 1: Even your browser can track you</h4>
+
+<p>Google Chrome has convenient sync features to your Google account. It also enables Google to look at <strong>all</strong> of your browser data. If you <em>really</em> like using Chrome, take a look at alternative Chromium-based browsers out there (notably the Chromium project, but that's a bit out of reach for common users). The most competitive (and privacy-friendly) alternative right now is Firefox (even more so with the Quantum update from November).</p>
+
+<h4>Advertising</h4>
+
+<p>Everybody hates advertisements. This is known. Most people reading this will also know of the existence of ad blockers. The most widely known one is AdBlock ( <a href="https://addons.mozilla.org/en-US/firefox/addon/adblock-plus/">Firefox</a> / <a href="https://chrome.google.com/webstore/detail/adblock-plus/cfhdojbkjhnklbpkdaibdccddilifddb">Chrome</a>). It's a very good entry point and if that's as far as you want to go, that's fine. AdBlock has a "value added" feature of whitelisted ads, so as to more ethically serve advertisements to you and at the very least avoid the malicious ones.</p>
+
+<p>The alternative is uBlock Origin(<a href="https://addons.mozilla.org/en-US/firefox/addon/ublock-origin/">Firefox</a> / <a href="https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm">Chrome</a>). uBlock claims to be more processor efficient than AdBlock, so there's also speed gains to be had from it. uBlock is far stricter than AdBlock and even has sibling extensions in the form of uBlock Origin Extra (Firefox features make it pointless for Firefox, but it's available for Chrome) and uBO-Scope to see just how exposed you are on a given website. With a bit of extra configuration, uBlock can also serve as a proper anti-tracker.</p>
+
+<p>With one of these two extensions installed, you'll not only benefit from no longer having to view ads (even on video sites like YouTube), but you'll load web pages faster since you won't have to download the ad content. The only place these don't work is with native ads (Facebook posts, LinkedIn messages, etc.).</p>
+
+<h4>Anti-tracking</h4>
+
+<p><strong>EDIT 2018: since intially writing this post I have been informed that Ghostery was actually bought out by an advertising company and actually tracks the users. I apologise for not finding this out sooner. I have removed links to it and now recommend Privacy Badger.</strong></p>
+
+<p>This is the crux of the post. Every social media share button has the potential to track you. Privacy Badger (<a href="https://addons.mozilla.org/en-US/firefox/addon/privacy-badger17/">Firefox</a> / <a href="https://chrome.google.com/webstore/detail/privacy-badger/pkehgijcmpdhfbdbbnkijodmdjhbjlgp">Chrome</a>) analyses the websites you visit to determine if they are tracking you, and blocks the tracking programs if they are.</p>
+
+<h4>Security</h4>
+
+<p>As mentioned in my <a href="https://thecapegreek.co.za/blog/bitcoin-and-blockchain-buying-bonanza">Blockchain post</a>, coin mining scripts have started to spring up this year that utilise your computer's power through the browser in order to mine cryptocurrencies for the website owners. This has some ethical cases (as with AdBlock's whitelist), but if you still don't want to take the risk then take a look at one of the NoCoin scripts out there.</p>
+
+<p>Another handy extension is HTTPS Everywhere (<a href="https://addons.mozilla.org/en-US/firefox/addon/https-everywhere/">Firefox</a> / <a href="https://chrome.google.com/webstore/detail/https-everywhere/gcbommkclmclpchllfjekcdonpmejbdp">Chrome</a>). This extension forces all websites you go to to use the HTTPS protocol instead of plain HTTP. This provides added security because HTTPS content cannot be spied on. This is <strong>especially</strong> important for things like login pages and other pages with sensitive data input. I surely hope you don't want your login details stolen, do you?</p>
+
+<h3>These are the main ways to protect yourself online while still having full web functionality. The platforms you use can still track you and all the data you produce on those platforms however.</h3>
+
+<h4>Platforms and you</h4>
+
+<p>Have you ever considered leaving some of the bigger platforms like Facebook or Twitter? I'm sure the thought crossed your mind, and was immediately followed up with a big fear of missing out on big exciting things from your friends' lives or the ability to contact relatives easily.</p>
+
+<p>The truth is the platforms we use are ubiquitous because we are social creatures. I won't be telling you what to do here, but I will be telling you that considering to remove those platforms from your life isn't impossible. Consider it and see where you go. While you're at it, also consider alternatives. There are privacy-driven and secure alternative messaging platforms like Riot.im and open-source social networks like Mastodon for Twitter people and Diaspora for Facebook people. I highly encourage you to take a look at these networks and see if you'd not gain from being there instead.</p>
+
+<h4>How far are you willing to go? De-Googling your life</h4>
+
+<p>Google specifically has quite the stranglehold on the internet. It provides applications in almost every field, and finds novel ways to consolidate them all to provide a diverse, yet connected product range. For that I do certainly applaud. It's not an easy task. But you do sacrifice all the data and behavioural patterns you submit to them by using their products. You might consider de-Googling your life then if you don't want to give it all to them. Change to alternative services like Tutanota/ProtonMail for email, private cloud services, Open Source programs for documents and spreadsheets, and so on. If Google has made it, there's a high possibility of an open, tracking-free alternative.</p>
+
+<p>Some privacy activists I know have gone as far as to block every known Google and Facebook web domain from reaching their computers. It sounds like quite the world to live in.</p>
+
+<h5>How to search for things without Google, Bing, or Yahoo</h5>
+
+<p>Believe it or not, there are other search engines out there, and good ones at that. The most popular one, tailored to privacy specifically, is <a href="https://duckduckgo.com/">DuckDuckGo</a>. DuckDuckGo (DDG), in short, searches Google for you and avoids proprietary/sponsored answers to queries. I find it interesting to see the stark contrast of search result quality from DDG where Google doesn't know the person doing the asking versus on your account where they can almost read your mind.</p>
+
+<h3>Protection at the highest level: from your own internet provider</h3>
+
+<p>Even your ISP can (and does) track you these days. I sure as hell don't pay my ISP hundreds of rands every month for a pittance of data at sub-1Mbps speeds to have all my things tracked. That's where <strong>Virtual Private Networks (VPNs)</strong> come in.</p>
+
+<p>In short, a VPN can be described as a messenger in the middle between your computer and the internet. All internet traffic going in and out of your PC go through the VPN server first. To anyone spying on your network activity, all they're able to see is you connecting to that server. This allows you to prohibit your ISP and other unwanted parties from spying on you at the network level.</p>
+
+<p>There are many many VPN services out there. <strong>Just don't use a free one</strong>. Remember from part 1: <em><strong>If you aren't paying for the product, you are the product</strong></em>. The first name that comes to mind for me is TunnelBear.</p>
+
+<h3>Finally</h3>
+
+<p>This post is not intended as a how-to guide, but rather as a reference page for the main methods you can use to protect yourself online from trackers, malicious actors, and annoying ads. I hope you've found the information useful. If there's anything you didn't understand in the post, feel free to reach me on social media (check the About page) or to encourage curiousity and self-search: DuckDuckGo it!</p>
+
+<h5>Out of all the products mentioned here, I use:</h5>
+
+<ul>
+<li>Firefox</li>
+<li>DuckDuckGo</li>
+<li>uBlock Origin + uBO-Scope</li>
+<li>Privacy Badger</li>
+<li>ProtonMail</li>
+<li>HTTPS Everywhere</li>
+<li>NoCoin</li>
+</ul>
+
+<p>I'm in the process of de-Googling and will be acquiring a VPN as soon as I have a faster internet connection. I hope you enjoyed reading this. Until next time!</p>
+]]></content:encoded>
+            <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nikolaos Spyratos</dc:creator>
+            <pubDate>Fri, 15 Dec 2017 00:00:00 +0200</pubDate>
+            <media:content
+                    medium="image"
+                    url="https://www.thecapegreek.co.za/assets/images/profile-rounded.webp"
+                    type="image/jpeg"
+                    width="150"
+                    height="148" />
+        </item>
+                <item>
+            <title><![CDATA[Is Privacy Dead? Part 1: How you're tracked]]></title>
+            <link>https://www.thecapegreek.co.za/blog/08-12-2017-is-privacy-dead-part-1</link>
+            <guid isPermaLink="true">https://www.thecapegreek.co.za/blog/08-12-2017-is-privacy-dead-part-1</guid>
+            <description><![CDATA[An article on privacy, tracking, and echo chambers.]]></description>
+            <content:encoded><![CDATA[<h2>I love Betteridge's Law of Headlines as much as the next guy, but the answer here is more complex. In this post I'll discuss current privacy issues in the current era, leaks and the extent of tracking. Warning: This is somewhat long.</h2>
+
+<p>In Part 2 I'll be discussing methods to limit online tracking and protect your privacy. Stay tuned!</p>
+
+<p><strong>To answer the question:</strong> For ordinary people who aren't aware of the problem or ignore it, yes. For the rest, it's more of a zombie or comatose patient these days. I believe this stems from two root causes: the technophobia and laziness to learn new things that many people have, and manipulation by governments and corporations.</p>
+
+<p>Let's face it. A lot of people unfortunately have no desire to learn anything about how their world works, or are even actively against it. Others are scared in case they break something, or scared of the highly technologically-oriented world we live in. We can go down the rabbit hole of finding the causes for these things, but that would require a wholly new article to supplement this one.</p>
+
+<p>I'm not qualified to speak on the condition of education and ambition worldwide. I'd speculate however that it has to do with quality of life and an environment that encourages or discourages learning and exploration of new concepts. What I <em>am</em> qualified to speak about is that technological knowledge is not a niche thing anymore. Basic use of phones and computers is <strong>required</strong> in modern life.</p>
+
+<p>Most middle-class jobs are either removed or severely limited if you remove technology out of the process. This generation's children might be far more capable than the last at using tech, but not always. It takes concerted effort to guide people in the right direction.</p>
+
+<p>Then there's the governments and corporations. I'm no hippy and these entities exist for good reasons and do bring a lot of value, but in the process we've also let ourselves be manipulated. A 2013 documentary by the name of <em><a href="http://www.imdb.com/title/tt2084953/">Terms and Conditions May Apply</a></em> (highly recommended) highlights what has happened to erode our privacy since the late 90s and early 2000s. It can be summarised in two points.</p>
+
+<h2>How you're tracked</h2>
+
+<ul>
+<li>First, nobody reads the End User License Agreements anymore and blindly accept anything in those documents, which enables the service providers to track anything and everything about user behavior.</li>
+<li>Second, intelligence entities like the NSA have forced their way into the data stores of the big tech companies (Google, Facebook, Microsoft, Apple, Yahoo and others). As of writing this there is mass surveillance legislation in the Netherlands that is about to be passed that will enable the Dutch government to spy on its citizens just as effectively as the US.</li>
+</ul>
+
+<p>This problem isn't just in the US and Netherlands however. All participating nations in the "<a href="https://en.wikipedia.org/wiki/Five_Eyes">Five Eyes</a>" intelligence alliance and its extensions of <a href="https://en.wikipedia.org/wiki/Five_Eyes#Other_international_cooperatives">Six, Nine, and Fourteen Eyes and other such groups</a> have some sort of surveillance.</p>
+
+<p>Things like the <a href="https://en.wikipedia.org/wiki/Global_surveillance_disclosures_(2013–present)">Snowden leaks and others</a> have shown us how large the problem has already become. Every single move you make is tracked by online systems. "Incognito Mode" doesn't apply here. Either your data (personal, usage patterns or otherwise) is tracked by surveillance agencies or the service providers themselves. This is true in most cases whether you pay for the service or not. Generally however, the following saying applies: "<em>If you aren't paying for the product, <strong>you</strong> are the product</em>".</p>
+
+<p>If you still don't believe me, I'll give you an example that applies to YouTube, Facebook and Instagram. To start, it is important to differentiate the "Echo Chamber Algorithm" as I like to call it and the more nefarious application of it in tracking you.</p>
+
+<h2><em>What is the "Echo Chamber Algorithm"?</em></h2>
+
+<p>Ever notice how, on YouTube, Facebook and Instagram, the more you consume a certain niche of content and feed likes and dislikes into the system, the more of that content you'll see pop up over other types? For example, if you open Eurobeat music and car video memes for a week straight, your YouTube home page will then be <strong>filled</strong> with those things (first hand experience).</p>
+
+<p>If you dislike certain content, you'll eventually start to see less and less of it. This also applies to the kind of advertisements you see on these platforms, otherwise known as <em>targeted advertising</em>. Makes sense from the business perspective as you'll have a much higher rate of sales hooks.</p>
+
+<p>The reasoning for this is pretty obvious, but has downsides. You'll see far more of the type of content you like, which is great, but variety of opinion will be stifled.</p>
+
+<p>This creates an ideological echo chamber because when it comes to news and information, it boxes people in and feeds them only content that they'd agree with. Thus, opinion trenches dig deeper and deeper the more you are fed by the algorithms.
+No one is truly safe from this unless you only consume content on these services while not having an account to be tracked on (and in some cases, even without one you can be tracked).</p>
+
+<h2><em>What's wrong with all this? I have nothing to hide, so why should I care?</em></h2>
+
+<p>This ties into the previous point about your data being collected by entities without your consent. <strong>Remember the Equifax breach a few months ago?</strong> Most people with information on their systems had not explicitly given their information to Equifax. Equifax obtained it through third parties, who might have also obtained it from other third parties, and so on.</p>
+
+<h3><em>"Arguing that you don't care about the right to privacy because you have nothing to hide is no different than saying you don't care about free speech because you have nothing to say"</em> - Edward Snowden</h3>
+
+<p>You don't care about your privacy until you do, and you'll have nowhere to turn at that point. At the very least, you should care on a security level for protecting your information from malicious people. More entities with your data means more points of failure. Even the tightest security has flaws. More points of failure means higher risk of failure.</p>
+
+<p>Then, you should also care because of incompetency, by those who store the data (again, security) and those who view it (corporate, government). Surveillance programs have shot up in number and grown greatly in scale, yet we still have a seemingly growing number of domestic and "regular" (I hesitate to use the term regular here) terrorism incidents every year worldwide. "Pray for x" isn't a solution, and surveillance clearly isn't either.</p>
+
+<p>At some point, all the data the surveillance agencies have actually <em>detriments</em> the amount of valuable information they have. You can't just search through it as if it were Google and only find the criminals. Machine Learning (for that is the proper name for what is called Artificial Intelligence these days) is also not sophisticated enough where we could trust it 100% as if we were in an episode of <em>Person of Interest</em>.</p>
+
+<p>Facebook has recently claimed that <a href="https://www.bloomberg.com/news/articles/2017-11-29/facebook-says-99-of-is-al-qaeda-content-spotted-by-ai">their AI blocks 99% of terrorist content</a>, but also specifies that their tool is not perfect. It cannot take into account regional content that might seem suspicious to the outside but isn't, and isn't fully able to discern the eccentricities of different languages. Will it eventually get to the point where it can reliably be trusted in almost all cases, in other applications? Possibly. But we don't know how far away that is.</p>
+
+<h3><em>I don't have social media/Gmail/etc accounts. This all doesn't affect me.</em></h3>
+
+<p>Yes it does. What you likely didn't know is that <strong>every single website</strong> that includes a social media share button allows those platforms to track you as well, through <em>browser cookies</em>. Look those up if you want to know more.</p>
+
+<h3>Other examples of tracking</h3>
+
+<ul>
+<li>Gmail reads through your emails and on the mobile version suggests automatic responses based on content. Again, this has pros and cons. It'll warn you if you send an email saying something about attachments in it when you forgot to attach the files. But you're still giving information about you to Google in your "private" email conversations.</li>
+<li><a href="http://www.popularmechanics.com/technology/security/a13819012/google-android-phone-cell-tower-tracking/">Google tracks your location even when your device GPS is off.</a></li>
+<li>Many of your apps request a lot more permissions from your device than they need to in order to function. This is because they can use that data and sell it to third party advertisers or use it as part of their own tracking. In several cases the fringe permissions to have a valid reason however.</li>
+</ul>
+
+<h2>Finally</h2>
+
+<p>I'm not saying corporations, surveillance agencies and governments are evil. Far from that. They provide valuable services to all of us. However an obsession with obtaining more and more information combined with our current rapid pace of innovation and the slowness of governments to react has led not to an Orwellian Nightmare from 1984, but rather Huxley's Brave New World where we drown in the <a href="https://en.wikipedia.org/wiki/Amusing_Ourselves_to_Death">ocean of data and distraction</a>.</p>
+
+<p>I'm also not saying "fight back" like some revolutionary. This is a choice to be made by the individual on whether or not they want to continue giving up everything about themselves to the entities. Considering the amount of profiles and information you could likely find on me alone, I'm no saint in this regard. I'm of the opinion that the best option is not to try and remove your information from the internet or not use the internet at all, but rather <strong>limit what is visible to be tracked.</strong></p>
+
+<h2>Part 2 of this topic will be about privacy enabling options for your internet usage, and my personal policy on all of this.</h2>
+]]></content:encoded>
+            <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nikolaos Spyratos</dc:creator>
+            <pubDate>Fri, 08 Dec 2017 00:00:00 +0200</pubDate>
+            <media:content
+                    medium="image"
+                    url="https://www.thecapegreek.co.za/assets/images/profile-rounded.webp"
+                    type="image/jpeg"
+                    width="150"
+                    height="148" />
+        </item>
+                <item>
+            <title><![CDATA[Bitcoin and Blockchain Buying Bonanza]]></title>
+            <link>https://www.thecapegreek.co.za/blog/15-11-2017-bitcoin-and-blockchain-buying-bonanza</link>
+            <guid isPermaLink="true">https://www.thecapegreek.co.za/blog/15-11-2017-bitcoin-and-blockchain-buying-bonanza</guid>
+            <description><![CDATA[My understanding cryptocurrencies in 2017.]]></description>
+            <content:encoded><![CDATA[<h2><strong>There's been a lot of buzz on the internet regarding Bitcoin &amp; Blockchain recently, but not all of us know what it means. Here's my take on it and what you should know.</strong></h2>
+
+<p>Bitcoin and Blockchain have become hot topics in the past few years, seemingly out of nowhere. We can start with the assumption that you know that Bitcoin is a form of online currency and it is somehow tied to the Blockchain. What is that relation, and what is the blockchain?</p>
+
+<h3>Explaining Blockchain</h3>
+
+<p>Let's start with the Wikipedia definition: <em><a href="https://en.wikipedia.org/wiki/Blockchain">"A blockchain is a continuously growing list of records, called blocks, which are linked and secured using cryptography."&nbsp;&nbsp;<i class="fa fa-external-link"></i></a></em>. To paraphrase it, a blockchain is a sort of accounting ledger. With it you can see groups (blocks) of transactions (records). These groups are gathered together and verified to be true and consistent with each other through mathematical functions.</p>
+
+<p>Two properties arise from the verification process: <strong>if a transaction is false</strong> (i.e. someone trying to lie about their transactions) <strong>it will be rejected from the chain</strong>, and <strong>once a transaction is added it cannot be changed</strong>. Knowing that all the records in this chain of blocks are <strong>both</strong> true and unchangeable is very important as it allows us to build systems on top of the technology that require always-true and trusted data. What sort of systems require that? You guessed it, <strong>currencies</strong>. This is where Bitcoin comes in. Bitcoin is far from the only blockchain-based currency, but it is the most well-known. Other examples include Ether (using Ethereum), Litecoin and many others.</p>
+
+<h3>Bitcoin</h3>
+
+<p>Bitcoin is a digital currency using the blockchain in a <strong>decentralized</strong> fashion, meaning that it does not require to be run by a central authority/computer (i.e. a bank), and the computing magic can be distributed among their users (much like internet torrents).</p>
+
+<p>Bitcoin uses the blockchain record keeping to track transactions made. However, the process of running the blockchain (the previously mentioned mathematical functions) requires quite a lot of computing power. Ordinarily, there is no incentive for someone to do everyone the service of these calculations using their own computer. But with Bitcoin <strong>mining</strong> there is.</p>
+
+<h3>Mining coins</h3>
+
+<p>"Mining" is the act of using your computer hardware (specifically graphics cards) to process mathematical calculations in order to run blockchain transactions, in exchange for tiny pieces of currency. With Bitcoin specifically, only 21 million Bitcoins were originally in existence (and still now at the time of writing this). Mining rewards miners with Bitcoins. Don't think that it's "easy" or "free" money however. The Bitcoin blockchain has grown very large, and as such <strong>mining an entire Bitcoin no longer returns a profit</strong> because the portion of coin you get on ordinary computer hardware in a given time period is less than 3 decimal places.</p>
+
+<h2><strong>Is it too late to get into Bitcoin and other currencies?</strong></h2>
+
+<h3>Short answer: No.</h3>
+
+<h3>Long answer: No-o.</h3>
+
+<p>Mining Bitcoin specifically certainly isn't worth it anymore unless you have large amounts of cash lying around that you can spend on specialized mining computers. For other blockchain currencies however the answer varies.</p>
+
+<h3>What are my options then?</h3>
+
+<p>You can still trade these digital currencies <strong>just like any other currency and commodity</strong>. As with ordinary trading though, you should only do it with money you can live with losing.
+<strong>A word of warning:</strong> these currencies are very volatile and it's easy to get lost in the ups and downs. Days with 100+% increases or decreases are not uncommon.</p>
+
+<h2><strong>Notes</strong></h2>
+
+<h3>Security, hardware and you</h3>
+
+<p>In the last few months, new services have emerged that allow website owners to use the browsers (and thus computers) of website visitors to mine coins for them. The Pirate Bay tested this on their website without telling anyone until after the fact. This raises concerns, because currently these services can't and don't regulate how much of your resources they use. Imagine visiting an ordinary blog website of some random developer and suddenly your computer usage spikes and becomes sluggish.</p>
+
+<p>If you're interested in taking precautions against this, look into <strong>No Coin</strong> extensions for Chrome and Firefox.</p>
+
+<p>Many believe however that this idea can be executed ethically. Many people would surely be willing to trade somem resources (in limited amount) in order to remove advertisements from a website or otherwise support it.</p>
+
+<h3>On building mining computers</h3>
+
+<p>Since mining became popular (and increasingly difficult), miners started buying out commercial graphics cards (the main workhorse of mining) and starved the rest of the consumer base. Luckily this has stabilised for now, but please <strong>only buy dedicated mining graphics cards when building a mining rig</strong>.</p>
+
+<h2>Finally</h2>
+
+<p>The world of cryptocurrencies (for that is what these currencies are called) is still in the early stages, much like the Internet was in the 1990s. It's far from too late to get in, and the real benefits of the technology have yet to be realised, and might not even be related to currencies!</p>
+]]></content:encoded>
+            <dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Nikolaos Spyratos</dc:creator>
+            <pubDate>Wed, 15 Nov 2017 00:00:00 +0200</pubDate>
+            <media:content
+                    medium="image"
+                    url="https://www.thecapegreek.co.za/assets/images/profile-rounded.webp"
+                    type="image/jpeg"
+                    width="150"
+                    height="148" />
+        </item>
+            </channel>
+</rss>
