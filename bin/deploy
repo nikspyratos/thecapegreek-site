@@ -1,8 +1,11 @@
 #!/bin/bash
 
 d=$(date +"%Y-%m-%d %H:%M:%S")
-git checkout gh-pages
-git fetch
-git pull
-git checkout master
-npm run production && git add build_production && git commit -m "Build for deploy $d" && git subtree push --prefix build_production origin gh-pages
+
+# https://gist.github.com/cobyism/4730490#gistcomment-1394421
+npm run production
+git add build_production
+git commit -m "Build for deploy $d"
+git subtree split --prefix build_production -b gh-pages # create a local gh-pages branch containing output folder
+git push -f origin gh-pages:gh-pages # force the push of the gh-pages branch to the remote gh-pages branch at origin
+git branch -D gh-pages # delete the local gh-pages, because on next build the ref will mismatch and cause errors
