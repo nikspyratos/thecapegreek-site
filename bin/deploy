@@ -1,0 +1,8 @@
+#!/bin/bash
+
+d=$(date +"%Y-%m-%d %H:%M:%S")
+git checkout gh-pages
+git fetch
+git pull
+git checkout master
+npm run production && git add build_production && git commit -m "Build for deploy $d" && git subtree push --prefix build_production origin gh-pages
