@@ -112,22 +112,16 @@ return [
         [
             'title' => 'PHP South Africa',
             'subtitle' => 'Organiser',
-            'description' => 'Gathering South Africa\'s PHP Developers. Feel free to check drop by the next meetup!',
-            'url' => 'https://superbalist.com'
+            'description' => 'Gathering South Africa\'s PHP Developers.',
+            'url' => 'https://phpsouthafrica.org'
         ]
     ],
     'companies' => [
         [
-            'title' => 'SABEN',
-            'subtitle' => 'Jan 2017 - Dec 2017',
-            'description' => 'ISP for South African Colleges',
-            'url' => 'https://saben.ac.za'
-        ],
-        [
-            'title' => 'TCT Digital',
-            'subtitle' => 'Feb 2018 - Dec 2019',
-            'description' => 'Developers of the Hey Jude app',
-            'url' => ''
+            'title' => 'Car & Classic',
+            'subtitle' => 'Nov 2020 - Present',
+            'description' => 'Europe\'s #1 classic car & auctions website ',
+            'url' => 'https://carandclassic.co.uk'
         ],
         [
             'title' => 'Superbalist',
@@ -136,10 +130,16 @@ return [
             'url' => 'https://superbalist.com'
         ],
         [
-            'title' => 'Car & Classic',
-            'subtitle' => 'Nov 2020 - Present',
-            'description' => 'Europe\'s #1 classic car & auctions website ',
-            'url' => 'https://carandclassic.co.uk'
+            'title' => 'TCT Digital',
+            'subtitle' => 'Feb 2018 - Dec 2019',
+            'description' => 'Developers of the Hey Jude app',
+            'url' => ''
+        ],
+        [
+            'title' => 'SABEN',
+            'subtitle' => 'Jan 2017 - Dec 2017',
+            'description' => 'ISP for South African Colleges',
+            'url' => 'https://saben.ac.za'
         ]
     ],
     'projects' => [

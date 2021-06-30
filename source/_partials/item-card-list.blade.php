@@ -1,6 +1,6 @@
 @php
     $cardSize ??= 'lg:w-1/3';
-    $borderColour ??= 'border-tcg_blue';
+    $borderColour ??= 'border-tcg_purple';
     $transparent ??= false;
 @endphp
 

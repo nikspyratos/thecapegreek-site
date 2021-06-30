@@ -70,7 +70,7 @@
     }
 
     hr {
-        @apply mr-72 my-8 text-tcg_pink border-dashed border
+        @apply mr-72 my-8 text-tcg_purple border-dashed border
     }
 
     .hr-even {

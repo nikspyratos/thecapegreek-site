@@ -4,6 +4,8 @@ section: body
 title: "Reading"
 ---
 
+# Reading
+
 These are my favourite books on all sorts of topics.
 
 ## Self Improvement
@@ -113,7 +115,7 @@ Flow state, "being in the zone", and deep work are all synonymous. Cal Newport g
 
 ### Paul Jarvis - Company of One
 
-While this is *mostly* about running a company solo, it also caters to intrapreneurship and being an effective "company of one" within an existing organisation. Definitely worth a read if you're looking to run your projects more independently. 
+While this is *mostly* about running a company solo, it also caters to intrapreneurship and being an effective "company of one" within an existing organisation. Definitely worth a read if you're looking to run your projects more independently. In the same vein are the Make Book by Pieter Levels and Zero to Sold by Arvid Kahl. 
 
 ### Kim Scott - Radical Candor
 
