@@ -114,16 +114,13 @@
 
 /* Colours */
 .tcg-bg-gradient {
-    /*background: -moz-linear-gradient(-45deg, var(--tcg_crimson), var(--tcg_radish), var(--tcg_purple), var(--tcg_blue), var(--tcg_light_blue), var(--tcg_green), var(--tcg_cyan));*/
-    /*background: -webkit-linear-gradient(-45deg, var(--tcg_crimson), var(--tcg_radish), var(--tcg_purple), var(--tcg_blue), var(--tcg_light_blue), var(--tcg_green), var(--tcg_cyan));*/
-    /*background: linear-gradient(-45deg, var(--tcg_crimson), var(--tcg_radish), var(--tcg_purple), var(--tcg_blue), var(--tcg_light_blue), var(--tcg_green), var(--tcg_cyan));*/
-    background: -moz-linear-gradient(45deg, var(--tcg_cyan), var(--tcg_green), var(--tcg_light_blue), var(--tcg_blue), var(--tcg_purple), var(--tcg_pink));
-    background: -webkit-linear-gradient(45deg, var(--tcg_cyan), var(--tcg_green), var(--tcg_light_blue), var(--tcg_blue), var(--tcg_purple), var(--tcg_pink));
-    background: linear-gradient(45deg, var(--tcg_cyan), var(--tcg_green), var(--tcg_light_blue), var(--tcg_blue), var(--tcg_purple), var(--tcg_pink));
-    -webkit-animation: moveGradient 15s ease infinite;
-    -moz-animation: moveGradient 15s ease infinite;
-    animation: moveGradient 15s ease infinite;
-    transition: background-color 0.4s;
+    background: -moz-linear-gradient(45deg, var(--tcg_cyan), var(--tcg_green), var(--tcg_light_blue), var(--tcg_blue));
+    background: -webkit-linear-gradient(45deg, var(--tcg_cyan), var(--tcg_green), var(--tcg_light_blue), var(--tcg_blue));
+    background: linear-gradient(45deg, var(--tcg_cyan), var(--tcg_green), var(--tcg_light_blue), var(--tcg_blue));
+    /*-webkit-animation: moveGradient 15s ease infinite;*/
+    /*-moz-animation: moveGradient 15s ease infinite;*/
+    /*animation: moveGradient 15s ease infinite;*/
+    /*transition: background-color 0.4s;*/
 }
 
 .tcg-text-light_blue-green {
@@ -136,45 +133,45 @@
 .tcg-bg-gradient {
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 200%;
-    -webkit-animation: moveGradient 20s ease infinite;
-    -moz-animation: moveGradient 20s ease infinite;
-    animation: moveGradient 20s ease infinite;
-    transition: background-color 0.4s;
+    background-size: 100%;
+    /*-webkit-animation: moveGradient 20s ease infinite;*/
+    /*-moz-animation: moveGradient 20s ease infinite;*/
+    /*animation: moveGradient 20s ease infinite;*/
+    /*transition: background-color 0.4s;*/
 }
 
-@-webkit-keyframes moveGradient {
-    0% {
-        background-position: 0% 50%
-    }
-    50% {
-        background-position: 100% 50%
-    }
-    100% {
-        background-position: 0% 50%
-    }
-}
+/*@-webkit-keyframes moveGradient {*/
+/*    0% {*/
+/*        background-position: 0% 50%*/
+/*    }*/
+/*    50% {*/
+/*        background-position: 100% 50%*/
+/*    }*/
+/*    100% {*/
+/*        background-position: 0% 50%*/
+/*    }*/
+/*}*/
 
-@-moz-keyframes moveGradient {
-    0% {
-        background-position: 0% 50%
-    }
-    50% {
-        background-position: 100% 50%
-    }
-    100% {
-        background-position: 0% 50%
-    }
-}
+/*@-moz-keyframes moveGradient {*/
+/*    0% {*/
+/*        background-position: 0% 50%*/
+/*    }*/
+/*    50% {*/
+/*        background-position: 100% 50%*/
+/*    }*/
+/*    100% {*/
+/*        background-position: 0% 50%*/
+/*    }*/
+/*}*/
 
-@keyframes moveGradient {
-    0% {
-        background-position: 0% 50%
-    }
-    50% {
-        background-position: 100% 50%
-    }
-    100% {
-        background-position: 0% 50%
-    }
-}
+/*@keyframes moveGradient {*/
+/*    0% {*/
+/*        background-position: 0% 50%*/
+/*    }*/
+/*    50% {*/
+/*        background-position: 100% 50%*/
+/*    }*/
+/*    100% {*/
+/*        background-position: 0% 50%*/
+/*    }*/
+/*}*/
