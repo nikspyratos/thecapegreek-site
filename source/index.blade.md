@@ -31,6 +31,14 @@ I'm a big believer in the value of professional & personal communities:
 
 @include('_partials.item-card-list', ['items' => $page->communities, 'cardSize' => 'lg:w-1/3', 'centered' => true])
 
+Other communities where you can find me:
+
+- LaravelUK
+- Laravel Greece
+- MicroConf
+- Rands Leadership Slack
+- NomadList
+
 ---
 ## Get in touch
 
