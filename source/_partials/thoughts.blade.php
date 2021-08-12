@@ -1,5 +1,5 @@
 @foreach($thoughts as $thought)
-<div class="flex flex-col mx-4 mb-4">
+<article class="flex flex-col mx-4 mb-4">
     <h3>
         @if(isset($thought['url']))
             <a href="{{ $thought->url }}">{{ $thought->title }}</a>
@@ -7,8 +7,10 @@
             {{ $thought->title }}
         @endif
     </h3>
-    <span class="pb-1 text-sm italic">{{ $thought->date }}</span>
-    {!! $thought->getContent() !!}
-    <hr>
-</div>
+    <section>
+        <span class="text-sm italic">{{ $thought->date }}</span>
+        {!! $thought->getContent() !!}
+    </section>
+</article>
+<hr>
 @endforeach
