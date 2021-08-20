@@ -6,16 +6,18 @@
             <span class="text-tcg_green">{{ $page->navigation->subtitle }}</span>
         </div>
     </div>
-    <nav class="w-full lg:w-auto mt-3 lg:mt-0 self-center flex flex-wrap flex-row text-lg lg:text-xl font-bold divide divide-x-2 divide-tcg_grey">
-        @foreach($page->navigation->links as $navItem)
-            <div class="mt-1 mx-2 pl-3 text-center">
-                <a
-                        class="{{ $loop->even ? 'text-tcg_light_blue' : 'text-tcg_green' }} {{ $page->selected($navItem->url) ? 'border-b-2 border-tcg_white' : '' }}"
-                        href="{{ $navItem->url }}"
-                >
-                    {{ $navItem->title }}
-                </a>
-            </div>
-        @endforeach
+    <nav class="w-full lg:w-auto mt-3 lg:mt-0 self-center flex flex-wrap flex-row text-lg lg:text-xl font-bold">
+        <ul class="list-none m-0 divide divide-x-2 divide-tcg_grey">
+            @foreach($page->navigation->links as $navItem)
+                <li class="inline-block mr-1 pl-2 text-center">
+                    <a
+                            class="{{ $loop->even ? 'text-tcg_light_blue' : 'text-tcg_green' }} {{ $page->selected($navItem->url) ? 'border-b-2 border-tcg_white' : '' }}"
+                            href="{{ $navItem->url }}"
+                    >
+                        {{ $navItem->title }}
+                    </a>
+                </li>
+            @endforeach
+        </ul>
     </nav>
 </header>

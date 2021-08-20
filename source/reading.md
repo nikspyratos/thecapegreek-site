@@ -39,6 +39,7 @@ Greg McKeown dives into what is called essentialism - the idea of pursuing only 
 - Zan Perrion - The Alabaster Girl 
 - Janet W. Hardy - The Ethical Slut
 - Barefoot Doctor - Barefoot Doctor’s Handbook for Modern Lovers The Tao of Amazing Sex
+- Hackauthor² - Easy Peasy Method
 
 ### Mark Manson - Models
 
@@ -63,7 +64,15 @@ Even if you're not into polyamory or non-monogamy, this is an interesting read a
 
 ### Barefoot Doctor - Barefoot Doctor’s Handbook for Modern Lovers The Tao of Amazing Sex
 
-I'm not a very religious person and as such not much of a Taoist as the Barefoot Doctor here, but his advice is very sound
+I'm not a religious person and as such not much of a Taoist as the Barefoot Doctor here, but his practical advice is sound.
+
+### Hackauthor² - Easy Peasy Method
+
+This is a "hack book", adapted from Allen Carr's The Easy Way to Stop Smoking, but for pornographic addiction. As with other books here, even if you don't feel this applies to you, it's still worth a read. Naturally you can go to the source as well and read the original too.
+
+I enjoyed this because it demonstrates that Allen Carr's methodology can be easily adapted for other addictions (save for the most extreme physical ones) without losing much muster. Thus, for other forms of addiction you can apply the same principles!
+
+[easypeasymethod.org](https://easypeasymethod.org)
 
 ---
 
@@ -131,6 +140,7 @@ These two books can be considered fairly similar, so I've put them both here. In
 
 - Paul Wade - Convict Conditioning
 - Sam Harris - Waking Up
+- Meta Nomad - Exiting Modernity
 
 Hmm, I do need to find a book on food.
 
@@ -149,6 +159,12 @@ As such, this a good book on it. This has the least amount of equipment (just a 
 I'll be honest... I haven't read this. It is however in my current reading queue. I wanted to highlight it here however because of Sam Harris' *Waking Up* app, which provides guided meditations and many spiritual yet irreligious discussions.
 
 I believe meditation is one of the best things you can do for your mental health. Even 10 minutes a day.
+
+### Meta Nomad - Exiting Modernity
+
+A great text if you feel inundated by consumerism and feel concepts like simple living or minimalism aren't quite what you're looking for when it comes to living more purposefully. It dives into a sort of Neo-Asceticism so that you take back control of your conscious actions instead of wasting away in the eternal machine of "I want".
+
+[Available in PDF form or on the website directly](https://www.meta-nomad.net/exiting-modernity/)  
 
 ## Fiction
 
