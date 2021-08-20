@@ -19,9 +19,6 @@ return [
             'extends' => '_layouts.post',
             'section' => 'body'
         ],
-        'thoughts' => [
-            'sort' => '-order'
-        ]
     ],
     'navigation' => [
         'logo' => '/assets/images/profile-rounded.webp',
@@ -32,11 +29,6 @@ return [
                 'title' => 'Home',
                 'name' => 'home',
                 'url' => '/'
-            ],
-            'thoughts' => [
-                'title' => 'Thoughts',
-                'name' => 'thoughts',
-                'url' => '/thoughts'
             ],
             'blog' => [
                 'title' => 'Blog',
