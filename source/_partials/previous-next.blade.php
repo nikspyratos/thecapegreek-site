@@ -17,7 +17,7 @@
 @endif
 <div class="flex flex-wrap flex-row justify-center {{ $justify }} {{ $margin }}">
     @if (isset($previous))
-        <div class="w-full md:w-auto flex place-items-center justify-center">
+        <div class="w-full md:w-auto mb-4 flex place-items-center justify-center">
             <div>
                 <img
                         class="w-12 h-12"

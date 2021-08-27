@@ -1,8 +1,5 @@
 @php
     $sizeClasses = "w-full $cardSize";
-    if (isset($grid) && $grid) {
-        $sizeClasses = '';
-    }
     $borderClasses = "p-4 shadow-lg rounded-xl border-2 $borderColour";
     if ($transparent) {
         $borderClasses = '';

@@ -82,6 +82,10 @@ html {
     }
 }
 
+.max-w-content {
+    max-width: 884px;
+}
+
 /* Text */
 
 @font-face {

@@ -36,6 +36,10 @@ module.exports = {
             '74screen': '74vh'
         },
         extend: {
+            margin: {
+                '128': '32rem',
+                '160': '40rem'
+            },
             screens: {
                 '3xl': '2300px',
             },
