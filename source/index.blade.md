@@ -42,5 +42,5 @@ Other communities where you can find me:
 ---
 ## Get in touch
 
-If you'd like to contact me, check the footer links on the bottom right.
+If you'd like to contact me, check the contact links on the top right.
 

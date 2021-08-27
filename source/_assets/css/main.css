@@ -18,6 +18,10 @@
     --tcg_crimson: #ff220c;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 @layer base {
     /* https://css-tricks.com/custom-tailwind-css/ */
     html {
@@ -39,10 +43,6 @@
 
     p {
         @apply ml-2 my-2
-    }
-
-    ol, ul {
-        @apply list-disc ml-8 my-2
     }
 
     h1, h2, h3, h4, h5, h6 {

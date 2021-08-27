@@ -32,6 +32,9 @@ module.exports = {
         fontFamily: {
             display: ['Atkinson-Hyperlegible'/*, 'Helvetica', 'sans-serif'*/]
         },
+        height: {
+            '74screen': '74vh'
+        },
         extend: {
             screens: {
                 '3xl': '2300px',
