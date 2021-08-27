@@ -7,7 +7,7 @@
         <meta name="description" content="A look at some interesting projects in the PHP community">
         <meta name=”robots” content="index, follow">
         <title>What has the PHP Community Built? | Nik Spyratos - The Cape Greek</title>
-        <link rel="stylesheet" href="/assets/build/css/main.css?id=f7a3083ba2fe1888f24b">
+        <link rel="stylesheet" href="/assets/build/css/main.css?id=1d85267a2828f4c9b6dc">
 
         <link rel="icon" href="/favicon.ico"><!-- 32×32 -->
         <link rel="icon" href="/icon-192.png" type="image/svg+xml">
@@ -16,8 +16,8 @@
         <link rel="alternate" type="application/rss+xml" title="Nik Spyratos - The Cape Greek" href="https://www.thecapegreek.co.za/rss.xml" />
     </head>
     <body class="font-display text-tcg_dark antialiased bg-fixed bg-tcg_dark tcg-bg-gradient">
-        <div class="mx-8 md:mx-12 lg:mx-96 my-8 relative h-full shadow-bevel rounded-xl">
-            <header class="w-full p-4 flex flex-col lg:flex-row justify-between bg-tcg_dark border-tcg_pink border-b-2 rounded-t-xl text-tcg_white">
+        <div class="mx-8 md:mx-12 lg:mx-96 my-6 relative h-full shadow-bevel rounded-xl">
+            <header class="top-0 w-full p-4 flex flex-col lg:flex-row justify-between bg-tcg_dark border-tcg_pink border-b-2 rounded-t-xl text-tcg_white">
     <div class="w-1/3 flex flex-row items-start space-x-4">
         <img class="w-24" src="/assets/images/profile-rounded.webp">
         <div class="flex flex-col self-center font-bold text-xl sm:text-2xl">
@@ -25,8 +25,8 @@
             <span class="text-tcg_green">TheCapeGreek</span>
         </div>
     </div>
-    <nav class="w-full lg:w-auto mt-3 lg:mt-0 self-center flex flex-wrap flex-row text-lg lg:text-xl font-bold">
-        <ul class="list-none m-0 divide divide-x-2 divide-tcg_grey">
+    <nav class="w-full lg:w-auto mt-3 lg:mt-0 self-center flex flex-wrap flex-col justify-end text-lg lg:text-xl font-bold">
+        <ul class="list-none my-2 divide divide-x-2 divide-tcg_grey">
                             <li class="inline-block mr-1 pl-2 text-center">
                     <a
                             class="text-tcg_green "
@@ -52,11 +52,38 @@
                     </a>
                 </li>
                     </ul>
+        <address class="my-2 flex flex-wrap flex-row justify-end divide divide-x-2 divide-tcg_grey">
+                            <a class="inline-block mx-1 pl-2" href="https://twitter.com/thecapegreek">
+                    <img
+                            class="w-8 h-8"
+                            src="/assets/svg/twitter-tcg_green.svg" alt="Twitter"
+                    />
+                </a>
+                            <a class="inline-block mx-1 pl-2" href="https://www.linkedin.com/in/nikolaos-spyratos/">
+                    <img
+                            class="w-8 h-8"
+                            src="/assets/svg/linkedin-tcg_light_blue.svg" alt="LinkedIn"
+                    />
+                </a>
+                            <a class="inline-block mx-1 pl-2" href="https://github.com/nikolaos-spyratos">
+                    <img
+                            class="w-8 h-8"
+                            src="/assets/svg/github-tcg_green.svg" alt="GitHub"
+                    />
+                </a>
+                            <a class="inline-block mx-1 pl-2" href="mailto:nik.spyratos@gmail.com">
+                    <img
+                            class="w-8 h-8"
+                            src="/assets/svg/envelope-tcg_light_blue.svg" alt="Email Address"
+                    />
+                </a>
+                    </address>
     </nav>
 </header>
                 <div id="content" class="bg-tcg_white shadow-inner">
-    <main class="mx-8 py-6 text-lg">
-                    <div class="flex flex-wrap flex-row justify-center md:justify-end mb-8">
+    <main class="py-6 text-lg h-74screen overflow-y-scroll">
+        <div class="mx-8">
+                            <div class="flex flex-wrap flex-row justify-center md:justify-end mb-8">
                 <div class="w-full md:w-auto flex place-items-center justify-center">
             <div>
                 <a href="/blog/18-11-2019-php-decade-in-review">PHP Decade in Review</a>
@@ -70,9 +97,9 @@
         </div>
     </div>
     <hr>
-                            <h1>What has the PHP Community Built?</h1>
-            <span class="text-sm">19 December 2019</span>
-                <p><em>Originally for <a href="https://24daysindecember.net/2019/12/19/what-has-the-php-community-built/">24 Days in December</a></em>
+                                        <h1>What has the PHP Community Built?</h1>
+                <span class="text-sm">19 December 2019</span>
+                        <p><em>Originally for <a href="https://24daysindecember.net/2019/12/19/what-has-the-php-community-built/">24 Days in December</a></em>
 [2021 update: Site has been moved from Grav, despite what this article says]</p>
 
 <p>The PHP community is pretty large. It's easy to become isolated within the bubble of your chosen framework, version, or domain-specific code. Here's a look at some interesting PHP projects I've discovered over the years. Some of these are more well known than others, but all definitely deserve some love. Links to the websites will be in the headers.</p>
@@ -154,7 +181,7 @@
 <hr />
 
 <p>While writing this post, I've come to realise you could self-host most tools required to run many businesses these days, from time tracking to analytics to business cloud. It's truly staggering how much there is out there in PHP land for us to make the most of. I hope you've found some interesting new tools to play with from this post. Enjoy!</p>
-                    <hr>
+                            <hr>
 <div class="flex flex-wrap flex-row justify-center md:justify-end ">
                 <div class="w-full md:w-auto flex place-items-center justify-center">
             <div>
@@ -168,9 +195,10 @@
             </div>
         </div>
     </div>
-            </main>
+                    </div>
+    </main>
 </div>
-            <footer class="w-full p-4 flex flex-wrap lg:flex-row justify-between bg-tcg_dark border-tcg_pink border-t-2 rounded-b-xl text-tcg_white">
+            <footer class=" w-full p-4 flex flex-wrap lg:flex-row justify-between bg-tcg_dark border-tcg_pink border-t-2 rounded-b-xl text-tcg_white">
     <div class="w-full lg:w-auto self-center justify-center flex flex-row font-bold text-center text-sm sm:text-lg">
         <ul class="list-none m-0 divide divide-x-2 divide-tcg_grey">
                             <li class="inline-block mr-1 pl-2">
@@ -210,35 +238,6 @@
                     </a>
                 </li>
                     </ul>
-    </div>
-    <div class="w-full lg:w-auto mt-3 lg:mt-0 self-center justify-center flex flex-wrap flex-row text-md sm:text-lg font-bold">
-        <span class="font-bold self-center">Contact:</span>
-        <address class="flex flex-wrap flex-row divide divide-x-2 divide-tcg_grey">
-                    <a class="inline-block mx-1 pl-2" href="https://twitter.com/thecapegreek">
-                <img
-                        class="w-8 h-8"
-                        src="/assets/svg/twitter-tcg_green.svg" alt="Twitter"
-                />
-            </a>
-                    <a class="inline-block mx-1 pl-2" href="https://www.linkedin.com/in/nikolaos-spyratos/">
-                <img
-                        class="w-8 h-8"
-                        src="/assets/svg/linkedin-tcg_light_blue.svg" alt="LinkedIn"
-                />
-            </a>
-                    <a class="inline-block mx-1 pl-2" href="https://github.com/nikolaos-spyratos">
-                <img
-                        class="w-8 h-8"
-                        src="/assets/svg/github-tcg_green.svg" alt="GitHub"
-                />
-            </a>
-                    <a class="inline-block mx-1 pl-2" href="mailto:nik.spyratos@gmail.com">
-                <img
-                        class="w-8 h-8"
-                        src="/assets/svg/envelope-tcg_light_blue.svg" alt="Email Address"
-                />
-            </a>
-                </address>
     </div>
 </footer>
 
