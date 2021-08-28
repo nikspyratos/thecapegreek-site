@@ -9,3 +9,4 @@ git commit -m "Build for deploy $d"
 git subtree split --prefix build_production -b gh-pages # create a local gh-pages branch containing output folder
 git push -f origin gh-pages:gh-pages # force the push of the gh-pages branch to the remote gh-pages branch at origin
 git branch -D gh-pages # delete the local gh-pages, because on next build the ref will mismatch and cause errors
+git reset --hard HEAD^ # reset to commit before current one (HEAD), to avoid pushing the build commits to main/master
