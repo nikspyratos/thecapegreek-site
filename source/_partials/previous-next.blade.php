@@ -17,7 +17,7 @@
 @endif
 <div class="flex flex-wrap flex-row justify-center {{ $justify }} {{ $margin }}">
     @if (isset($previous))
-        <div class="w-full md:w-auto mb-4 flex place-items-center justify-center">
+        <div class="w-full md:w-1/2 mb-4 sm:mb-0 flex items-center justify-center md:justify-start">
             <div>
                 <img
                         class="w-12 h-12"
@@ -30,7 +30,7 @@
         </div>
     @endif
     @if (isset($next))
-        <div class="w-full md:w-auto flex place-items-center justify-center">
+        <div class="w-full md:w-1/2 flex items-center justify-center md:justify-end">
             <div>
                 <a href="{{ $next->getPath() }}">{{ $next->title }}</a>
             </div>

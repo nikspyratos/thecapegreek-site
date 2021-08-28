@@ -68,14 +68,14 @@ return [
             'alt' => 'Email Address',
             'url' => 'mailto:nik.spyratos@gmail.com'
         ],
+        [
+            'icon' => 'rss',
+            'alt' => 'RSS',
+            'url' => '/rss.xml'
+        ]
     ],
     'footer' => [
         'siteLinks' => [
-            [
-                'prefix' => '',
-                'text' => 'RSS',
-                'url' => '/rss.xml'
-            ],
             [
                 'prefix' => '',
                 'text' => 'COVID-19',

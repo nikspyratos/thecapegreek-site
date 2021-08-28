@@ -32,24 +32,14 @@ module.exports = {
         fontFamily: {
             display: ['Atkinson-Hyperlegible'/*, 'Helvetica', 'sans-serif'*/]
         },
-        height: {
-            '74screen': '74vh'
-        },
         extend: {
-            margin: {
-                '128': '32rem',
-                '160': '40rem'
-            },
             screens: {
-                '3xl': '2300px',
+                'xs': '640px'
             },
             boxShadow: {
                 'bevel': "0 0px 0px 20px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 1)"
             }
         },
-    },
-    variants: {
-        extend: {},
     },
     plugins: [],
 };
