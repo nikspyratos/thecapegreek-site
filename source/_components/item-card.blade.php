@@ -8,7 +8,7 @@
 <article class="flex flex-col {{ $sizeClasses }} mx-4 my-4 {{ $borderClasses }}">
     <h3>
         @if(!empty($item['url']))
-            <a href="{{ $item['url'] }}">{{ $item['title'] }}</a>
+            <a href="{{ $item['url'] }}" target="_blank">{{ $item['title'] }}</a>
         @else
             {{ $item['title'] }}
         @endif

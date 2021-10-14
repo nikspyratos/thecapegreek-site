@@ -8,10 +8,10 @@
     --tcg_grey: #525778;
     --tcg_white: #fbf9ff;
     --tcg_cyan: #85ffc7;
-    --tcg_blue: #3772ff;
+    --tcg_blue: #4d83ff;
     --tcg_light_blue: #42cafd;
     --tcg_green: #6fd08c;
-    --tcg_purple: #8855ff;
+    --tcg_purple: #7b54d8;
     --tcg_pink: #ef27a6;
     --tcg_red: #db3069;
     --tcg_radish: #de4d86;
@@ -34,43 +34,39 @@ html {
     }
 
     a {
-        @apply transition ease-in-out font-bold text-tcg_blue hover:text-tcg_pink
+        @apply transition ease-in-out text-xl font-bold text-tcg_light_blue hover:text-tcg_pink
     }
 
     #content a {
-        @apply border-b-2 border-tcg_blue hover:border-tcg_pink
+        @apply border-b-2 border-tcg_light_blue hover:border-tcg_pink
     }
 
     p {
-        @apply ml-2 my-2
+        @apply ml-2 my-2 text-xl
     }
 
     h1, h2, h3, h4, h5, h6 {
-        @apply mb-1 font-bold
+        @apply mb-1 font-bold text-tcg_blue
     }
 
     h1 {
-        @apply text-2xl text-tcg_light_blue
+        @apply text-3xl
     }
 
     h2 {
-        @apply text-xl text-tcg_green
+        @apply text-2xl
     }
 
     h3 {
-        @apply text-lg text-tcg_purple
+        @apply text-xl
     }
 
     h4 {
-        @apply text-sm text-tcg_crimson
-    }
-
-    h6 {
-        @apply text-xs
+        @apply text-lg
     }
 
     hr {
-        @apply mr-72 my-8 text-tcg_purple border-dashed border
+        @apply hidden md:block mx-36 my-8 text-tcg_pink border-dashed border
     }
 
     .hr-even {
@@ -118,9 +114,12 @@ html {
 
 /* Colours */
 .tcg-bg-gradient {
-    background: -moz-linear-gradient(45deg, var(--tcg_cyan), var(--tcg_green), var(--tcg_light_blue), var(--tcg_blue));
-    background: -webkit-linear-gradient(45deg, var(--tcg_cyan), var(--tcg_green), var(--tcg_light_blue), var(--tcg_blue));
-    background: linear-gradient(45deg, var(--tcg_cyan), var(--tcg_green), var(--tcg_light_blue), var(--tcg_blue));
+    /*background: -moz-linear-gradient(45deg, var(--tcg_cyan), var(--tcg_green), var(--tcg_light_blue), var(--tcg_blue));*/
+    /*background: -webkit-linear-gradient(45deg, var(--tcg_cyan), var(--tcg_green), var(--tcg_light_blue), var(--tcg_blue));*/
+    /*background: linear-gradient(45deg, var(--tcg_cyan), var(--tcg_green), var(--tcg_light_blue), var(--tcg_blue));*/
+    background: -moz-linear-gradient(45deg, var(--tcg_purple), var(--tcg_pink), var(--tcg_light_blue), var(--tcg_blue));
+    background: -webkit-linear-gradient(45deg, var(--tcg_purple), var(--tcg_pink), var(--tcg_light_blue), var(--tcg_blue));
+    background: linear-gradient(45deg, var(--tcg_purple), var(--tcg_pink), var(--tcg_light_blue), var(--tcg_blue));
     /*-webkit-animation: moveGradient 15s ease infinite;*/
     /*-moz-animation: moveGradient 15s ease infinite;*/
     /*animation: moveGradient 15s ease infinite;*/

@@ -54,6 +54,11 @@ return [
             'url' => 'https://twitter.com/thecapegreek'
         ],
         [
+            'icon' => 'instagram',
+            'alt' => 'Instagram',
+            'url' => 'https://instagram.com/thecapegreek'
+        ],
+        [
             'icon' => 'linkedin',
             'alt' => 'LinkedIn',
             'url' => 'https://www.linkedin.com/in/nikolaos-spyratos/'

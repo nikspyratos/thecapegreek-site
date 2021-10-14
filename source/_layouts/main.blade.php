@@ -15,7 +15,7 @@
         <link rel="manifest" href="/manifest.webmanifest">
         <link rel="alternate" type="application/rss+xml" title="{{ $page->siteName }}" href="{{ $page->baseUrl.'/rss.xml' }}" />
     </head>
-    <body class="font-display text-tcg_dark antialiased flex content-center bg-fixed bg-tcg_dark tcg-bg-gradient">
+    <body class="font-display text-tcg_white antialiased flex content-center bg-fixed bg-tcg_dark tcg-bg-gradient">
         <div class="max-w-content mx-auto sm:my-5 shadow-bevel rounded-xl">
             @include('_partials.header')
             @yield('content')

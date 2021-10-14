@@ -1,4 +1,4 @@
-<main id="content" class="bg-tcg_white shadow-inner py-6 text-lg">
+<main id="content" class="bg-tcg_dark shadow-inner py-6 text-lg">
     <div class="mx-8">
         @if (isset($previous) || isset($next))
             @include('_partials.previous-next', ['type' => 'top', 'previous' => $previous ?? null, 'next' => $next ?? null])

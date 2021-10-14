@@ -2,8 +2,8 @@
     <div class="w-full mb-2 lg:mb-0 self-center justify-center sm:justify-start flex flex-row space-x-4">
         <img class="w-24" src="{{ $page->navigation->logo }}">
         <div class="flex flex-col self-center font-bold text-xl sm:text-2xl">
-            <span class="text-tcg_light_blue">{{ $page->navigation->title }}</span>
-            <span class="text-tcg_green">{{ $page->navigation->subtitle }}</span>
+            <span class="text-tcg_blue">{{ $page->navigation->title }}</span>
+            <span class="text-tcg_purple">{{ $page->navigation->subtitle }}</span>
         </div>
     </div>
     <nav class="w-full mt-2 lg:mt-0 self-center justify-center sm:justify-end flex flex-wrap flex-col text-lg lg:text-xl font-bold">
@@ -11,7 +11,7 @@
             @foreach($page->navigation->links as $navItem)
                 <li class="inline-block mr-1 pl-2">
                     <a
-                            class="{{ $loop->even ? 'text-tcg_light_blue' : 'text-tcg_green' }} {{ $page->selected($navItem->url) ? 'border-b-2 border-tcg_white' : '' }}"
+                            class="text-2xl {{ $page->selected($navItem->url) ? 'text-tcg_pink border-b-2 border-tcg_pink' : '' }}"
                             href="{{ $navItem->url }}"
                     >
                         {{ $navItem->title }}
@@ -24,7 +24,7 @@
                 <a class="inline-block mx-1 pl-2" href="{{ $contact->url }}">
                     <img
                             class="w-8 h-8"
-                            src="{{ getSvgIcon($loop->even ? 'tcg_light_blue' : 'tcg_green', $contact->icon) }}" alt="{{ $contact->alt }}"
+                            src="/assets/svg/{{ $contact->icon }}.svg"
                     />
                 </a>
             @endforeach
