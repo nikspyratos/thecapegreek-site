@@ -30,11 +30,11 @@ return [
                 'name' => 'home',
                 'url' => '/'
             ],
-            'blog' => [
-                'title' => 'Blog',
-                'name' => 'blog',
-                'url' => '/blog'
-            ],
+//            'blog' => [
+//                'title' => 'Blog',
+//                'name' => 'blog',
+//                'url' => '/blog'
+//            ],
 //            'projects' => [
 //                'title' => 'Projects',
 //                'name' => 'projects',
@@ -68,11 +68,11 @@ return [
             'alt' => 'Email Address',
             'url' => 'mailto:nik.spyratos@gmail.com'
         ],
-        [
-            'icon' => 'rss',
-            'alt' => 'RSS',
-            'url' => '/rss.xml'
-        ]
+//        [
+//            'icon' => 'rss',
+//            'alt' => 'RSS',
+//            'url' => '/rss.xml'
+//        ]
     ],
     'footer' => [
         'siteLinks' => [
@@ -106,7 +106,17 @@ return [
             'subtitle' => 'Organiser',
             'description' => 'Gathering South Africa\'s PHP Developers.',
             'url' => 'https://phpsouthafrica.org'
-        ]
+        ],
+        [
+            'title' => 'Rands Leadership Slack',
+            'subtitle' => 'Member',
+            'url' => 'https://randsinrepose.com/welcome-to-rands-leadership-slack/'
+        ],
+        [
+            'title' => 'NomadList',
+            'subtitle' => 'Member',
+            'url' => 'https://nomadlist.com/@thecapegreek'
+        ],
     ],
     'companies' => [
         [
