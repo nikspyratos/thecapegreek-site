@@ -21,7 +21,7 @@
             <div>
                 <img
                         class="w-12 h-12"
-                        src="{{ getSvgIcon('tcg_green', 'arrow-left') }}" alt="left arrow"
+                        src="/assets/svg/arrow-left.svg" alt="left arrow"
                 />
             </div>
             <div>
@@ -37,7 +37,7 @@
             <div>
                 <img
                         class="w-12 h-12"
-                        src="{{ getSvgIcon('tcg_light_blue', 'arrow-right') }}" alt="left arrow"
+                        src="/assets/svg/arrow-right" alt="left arrow"
                 />
             </div>
         </div>
