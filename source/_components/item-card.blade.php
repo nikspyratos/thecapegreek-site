@@ -6,13 +6,13 @@
     }
 @endphp
 <article class="flex flex-col {{ $sizeClasses }} mx-4 my-4 {{ $borderClasses }}">
-    <h3>
+    <span class="text-xl">
         @if(!empty($item['url']))
             <a href="{{ $item['url'] }}" target="_blank">{{ $item['title'] }}</a>
         @else
             {{ $item['title'] }}
         @endif
-    </h3>
+    </span>
     <section>
         @if(!empty($item['subtitle']))
             <span class="{{ !empty($item['url']) ? 'pt-2' : '' }} pb-1 text-sm italic">{{ $item['subtitle'] }}</span>

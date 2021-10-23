@@ -2,8 +2,8 @@
     <div class="w-full mb-2 lg:mb-0 self-center justify-center sm:justify-start flex flex-row space-x-4">
         <img class="w-24" src="{{ $page->navigation->logo }}">
         <div class="flex flex-col self-center font-bold text-xl sm:text-2xl">
-            <span class="text-tcg_blue">{{ $page->navigation->title }}</span>
-            <span class="text-tcg_purple">{{ $page->navigation->subtitle }}</span>
+            <span class="clip-text bg-tcg-gradient-primary">{{ $page->navigation->title }}</span>
+            <span class="clip-text bg-tcg-gradient-secondary">{{ $page->navigation->subtitle }}</span>
         </div>
     </div>
     <nav class="w-full mt-2 lg:mt-0 self-center justify-center sm:justify-end flex flex-wrap flex-col text-lg lg:text-xl font-bold">
