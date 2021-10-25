@@ -37,7 +37,7 @@
             <div>
                 <img
                         class="w-12 h-12"
-                        src="/assets/svg/arrow-right" alt="left arrow"
+                        src="/assets/svg/arrow-right.svg" alt="right arrow"
                 />
             </div>
         </div>

@@ -16,8 +16,8 @@
         <link rel="alternate" type="application/rss+xml" title="{{ $page->siteName }}" href="{{ $page->baseUrl.'/rss.xml' }}" />
     </head>
     <body class="font-display text-tcg_white antialiased flex content-center bg-fixed bg-tcg_dark">
-        <div class="max-w-content mx-auto sm:my-5 rounded-xl">
-            @include('_partials.header')
+        <div class="max-w-content mx-auto sm:my-5 rounded-xl bg-tcg-gradient-primary p-5">
+            @include('_partials.hero')
             @yield('content')
             @include('_partials.footer')
         </div>

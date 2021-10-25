@@ -5,8 +5,9 @@ use Illuminate\Support\Str;
 return [
     'production' => false,
     'baseUrl' => 'https://www.thecapegreek.co.za',
+    'domain' => 'thecapegreek.co.za',
     'siteName' => 'Nik Spyratos - The Cape Greek',
-    'siteDescription' => 'Personal & Professional website of Nik Spyratos, The Cape Greek.',
+    'siteDescription' => 'Personal & Professional website of Nik Spyratos',
     'siteAuthor' => 'Nikolaos Spyratos',
     'siteLanguage' => 'en-gb',
     'selected' => function ($page, $section) {
@@ -21,61 +22,46 @@ return [
         ],
     ],
     'navigation' => [
-        'logo' => '/assets/images/profile-rounded.webp',
+        'logo' => '/assets/images/Nik Spyratos.webp',
         'title' => 'Nik Spyratos',
-        'subtitle' => 'TheCapeGreek',
+        'subtitle' => '@TheCapeGreek',
         'links' => [
             'home' => [
                 'title' => 'Home',
                 'name' => 'home',
                 'url' => '/'
             ],
-//            'blog' => [
-//                'title' => 'Blog',
-//                'name' => 'blog',
-//                'url' => '/blog'
-//            ],
-//            'projects' => [
-//                'title' => 'Projects',
-//                'name' => 'projects',
-//                'url' => '/projects'
-//            ],
-            'reading' => [
-                'title' => 'Reading',
-                'name' => 'reading',
-                'url' => '/reading'
-            ]
         ],
     ],
     'contacts' => [
         [
             'icon' => 'twitter',
-            'alt' => 'Twitter',
+            'title' => 'Twitter',
             'url' => 'https://twitter.com/thecapegreek'
         ],
         [
             'icon' => 'instagram',
-            'alt' => 'Instagram',
+            'title' => 'Instagram',
             'url' => 'https://instagram.com/thecapegreek'
         ],
         [
             'icon' => 'linkedin',
-            'alt' => 'LinkedIn',
+            'title' => 'LinkedIn',
             'url' => 'https://www.linkedin.com/in/nikolaos-spyratos/'
         ],
         [
             'icon' => 'github',
-            'alt' => 'GitHub',
+            'title' => 'GitHub',
             'url' => 'https://github.com/nikolaos-spyratos'
         ],
-        [
-            'icon' => 'envelope',
-            'alt' => 'Email Address',
-            'url' => 'mailto:nik.spyratos@gmail.com'
-        ],
+//        [
+//            'icon' => 'envelope',
+//            'title' => 'Email',
+//            'url' => 'mailto:nik.spyratos@gmail.com'
+//        ],
 //        [
 //            'icon' => 'rss',
-//            'alt' => 'RSS',
+//            'title' => 'RSS',
 //            'url' => '/rss.xml'
 //        ]
     ],

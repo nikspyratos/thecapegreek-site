@@ -8,7 +8,7 @@
 <article class="flex flex-col {{ $sizeClasses }} mx-4 my-4 {{ $borderClasses }}">
     <span class="text-xl">
         @if(!empty($item['url']))
-            <a href="{{ $item['url'] }}" target="_blank">{{ $item['title'] }}</a>
+            <a href="{{ $item['url'] }}" @if(isExternalLink($page, $item['url']))target="_blank"@endif>{{ $item['title'] }}</a>
         @else
             {{ $item['title'] }}
         @endif
