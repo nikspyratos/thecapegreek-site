@@ -1,4 +1,4 @@
-<header class="top-0 w-full p-4 flex flex-col justify-between bg-tcg_dark border-tcg_pink border-b-2 rounded-t-xl text-tcg_white">
+<header class="top-0 w-full p-4 flex flex-col justify-between bg-tcg_darker_purple border-tcg_pink border-b-2 rounded-t-xl text-tcg_white">
     <a class="w-full mb-4 self-center justify-center flex flex-col sm:flex-row space-x-4" href="/">
         <img class="w-48 sm:w-1/4 mb-2 sm:mb-0 rounded-full self-center" src="{{ $page->navigation->logo }}">
         <div class="flex flex-col self-center font-bold text-xl sm:text-2xl">

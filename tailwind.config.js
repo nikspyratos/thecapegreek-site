@@ -25,6 +25,7 @@ module.exports = {
             tcg_green: "var(--tcg_green)",
             tcg_pink: "var(--tcg_pink)",
             tcg_purple: "var(--tcg_purple)",
+            tcg_darker_purple: "var(--tcg_darker_purple)",
             tcg_red: "var(--tcg_red)",
             tcg_radish: "var(--tcg_radish)",
             tcg_crimson: "var(--tcg_crimson)"
