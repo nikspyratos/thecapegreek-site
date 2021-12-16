@@ -55,11 +55,6 @@ return [
             'url' => 'https://github.com/nikolaos-spyratos'
         ],
 //        [
-//            'icon' => 'envelope',
-//            'title' => 'Email',
-//            'url' => 'mailto:nik.spyratos@gmail.com'
-//        ],
-//        [
 //            'icon' => 'rss',
 //            'title' => 'RSS',
 //            'url' => '/rss.xml'
@@ -95,7 +90,7 @@ return [
         [
             'title' => 'PHP South Africa',
             'subtitle' => 'Organiser',
-            'description' => 'Gathering South Africa\'s PHP Developers.',
+            'description' => 'Gathering South Africa\'s PHP Developers',
             'url' => 'https://phpsouthafrica.org'
         ],
         [

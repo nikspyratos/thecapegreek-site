@@ -5,11 +5,10 @@ permalink: index.html
 title: "Home"
 ---
 
-I'm Nik. I build software for myself and for others. Exploration of life's many facets is my aim. This website is for my non-career oriented writings & projects.
+Building software for myself and for others. I believe in *Process* over *Metrics*.
 
 ## Projects
 
-Just the ones that made it over the finish line.
 @include('_partials.item-card-list', ['items' => $page->projects, 'centered' => true])
 
 ---
