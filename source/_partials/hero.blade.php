@@ -33,5 +33,7 @@
                 </a>
             @endforeach
         </address>
+        <hr class="my-4">
+        @include('_components.revue-signup')
     </nav>
 </header>
