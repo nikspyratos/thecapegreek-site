@@ -54,11 +54,11 @@ return [
             'title' => 'GitHub',
             'url' => 'https://github.com/nikolaos-spyratos'
         ],
-//        [
-//            'icon' => 'rss',
-//            'title' => 'RSS',
-//            'url' => '/rss.xml'
-//        ]
+        [
+            'icon' => 'envelope',
+            'title' => 'Email',
+            'url' => 'mailto:nik.spyratos@gmail.com'
+        ]
     ],
     'footer' => [
         'siteLinks' => [
@@ -92,42 +92,6 @@ return [
             'subtitle' => 'Organiser',
             'description' => 'Gathering South Africa\'s PHP Developers',
             'url' => 'https://phpsouthafrica.org'
-        ],
-        [
-            'title' => 'Rands Leadership Slack',
-            'subtitle' => 'Member',
-            'url' => 'https://randsinrepose.com/welcome-to-rands-leadership-slack/'
-        ],
-        [
-            'title' => 'NomadList',
-            'subtitle' => 'Member',
-            'url' => 'https://nomadlist.com/@thecapegreek'
-        ],
-    ],
-    'companies' => [
-        [
-            'title' => 'Car & Classic',
-            'subtitle' => 'Nov 2020 - Present',
-            'description' => 'Europe\'s #1 classic car & auctions website ',
-            'url' => 'https://carandclassic.co.uk'
-        ],
-        [
-            'title' => 'Superbalist',
-            'subtitle' => 'Jan 2020 - Nov 2020',
-            'description' => 'South Africa\'s #1 fashion e-commerce website',
-            'url' => 'https://superbalist.com'
-        ],
-        [
-            'title' => 'TCT Digital',
-            'subtitle' => 'Feb 2018 - Dec 2019',
-            'description' => 'Developers of the Hey Jude app',
-            'url' => ''
-        ],
-        [
-            'title' => 'SABEN',
-            'subtitle' => 'Jan 2017 - Dec 2017',
-            'description' => 'ISP for South African Colleges',
-            'url' => 'https://saben.ac.za'
         ]
     ],
     'projects' => [
