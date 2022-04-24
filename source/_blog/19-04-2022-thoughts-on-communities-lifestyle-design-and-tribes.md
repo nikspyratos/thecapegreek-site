@@ -1,8 +1,8 @@
 ---
 title: 'Thought on communities, lifestyle design and "tribes"'
 date: '19 April 2022'
-description: 'It's easy to grow weary of larger communities once you've been in them for a long time. What comes next?'
-order: 1
+description: "It's easy to grow weary of larger communities once you've been in them for a long time. What comes next?"
+order: 8
 ---
 
 I love online communities. Hundreds and thousands of minds coming together to discuss, collaborate, learn, and joke. Yet there's a ceiling to the value and impact of communities for individuals.
