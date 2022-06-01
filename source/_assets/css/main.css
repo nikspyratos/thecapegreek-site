@@ -42,6 +42,10 @@ html {
         @apply border-b-2 border-tcg_light_blue hover:border-tcg_pink
     }
 
+    blockquote {
+        @apply border-l-2 border-tcg_light_blue text-tcg_light_blue
+    }
+
     p {
         @apply ml-2 my-2 text-xl
     }
