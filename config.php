@@ -4,8 +4,8 @@ use Illuminate\Support\Str;
 
 return [
     'production' => false,
-    'baseUrl' => 'https://www.thecapegreek.co.za',
-    'domain' => 'thecapegreek.co.za',
+    'baseUrl' => 'https://www.thecapegreek.com',
+    'domain' => 'thecapegreek.com',
     'siteName' => 'Nik Spyratos - The Cape Greek',
     'siteDescription' => 'Personal & Professional website of Nik Spyratos',
     'siteAuthor' => 'Nikolaos Spyratos',
@@ -96,10 +96,10 @@ return [
     ],
     'projects' => [
         [
-            'title' => 'thecapegreek.co.za',
+            'title' => 'thecapegreek.com',
             'subtitle' => 'You are here. See: recursion.',
             'description' => 'Built with Jigsaw & Tailwind',
-            'url' => 'https://thecapegreek.co.za'
+            'url' => 'https://thecapegreek.com'
         ],
         [
             'title' => 'Personal cloud',
