@@ -1,4 +1,4 @@
-# thecapegreek.co.za
+# thecapegreek.com
 
 This is my personal website.
 

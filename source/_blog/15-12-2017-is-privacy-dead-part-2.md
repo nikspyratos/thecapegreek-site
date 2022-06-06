@@ -32,7 +32,7 @@ This is the crux of the post. Every social media share button has the potential 
 
 #### Security
 
-As mentioned in my [Blockchain post](https://thecapegreek.co.za/blog/bitcoin-and-blockchain-buying-bonanza), coin mining scripts have started to spring up this year that utilise your computer's power through the browser in order to mine cryptocurrencies for the website owners. This has some ethical cases (as with AdBlock's whitelist), but if you still don't want to take the risk then take a look at one of the NoCoin scripts out there.
+As mentioned in my [Blockchain post](https://thecapegreek.com/blog/bitcoin-and-blockchain-buying-bonanza), coin mining scripts have started to spring up this year that utilise your computer's power through the browser in order to mine cryptocurrencies for the website owners. This has some ethical cases (as with AdBlock's whitelist), but if you still don't want to take the risk then take a look at one of the NoCoin scripts out there.
 
 Another handy extension is HTTPS Everywhere ([Firefox](https://addons.mozilla.org/en-US/firefox/addon/https-everywhere/) / [Chrome](https://chrome.google.com/webstore/detail/https-everywhere/gcbommkclmclpchllfjekcdonpmejbdp)). This extension forces all websites you go to to use the HTTPS protocol instead of plain HTTP. This provides added security because HTTPS content cannot be spied on. This is **especially** important for things like login pages and other pages with sensitive data input. I surely hope you don't want your login details stolen, do you?
 
