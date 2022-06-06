@@ -46,6 +46,14 @@ html {
         @apply border-l-2 border-tcg_light_blue text-tcg_light_blue
     }
 
+    ul li {
+        @apply list-disc list-inside
+    }
+
+    li {
+        @apply pl-8
+    }
+
     p {
         @apply ml-2 my-2 text-xl
     }
