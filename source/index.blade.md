@@ -9,7 +9,7 @@ I build web apps for myself and others.
 
 I've been in the industry since 2017, in all sorts of team sizes from 2 to 50. My best work is done in product-oriented companies.
 
-Online & offline communities are important to me. My main port of call is ZATech, and I organise the PHP South Africa meetup.
+Online & offline communities are important to me. My main port of call is ZATech, and I'm a former organiser of the PHP South Africa meetup.
 
 If you'd like to follow my work or get in touch, see above for social media, email & newsletter.
 

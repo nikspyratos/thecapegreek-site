@@ -63,11 +63,6 @@ return [
     'footer' => [
         'siteLinks' => [
             [
-                'prefix' => '',
-                'text' => 'COVID-19',
-                'url' => 'https://sacoronavirus.co.za'
-            ],
-            [
                 'prefix' => 'Built with',
                 'text' => 'Jigsaw',
                 'url' => 'https://jigsaw.tighten.co'
@@ -89,7 +84,7 @@ return [
         ],
         [
             'title' => 'PHP South Africa',
-            'subtitle' => 'Organiser',
+            'subtitle' => 'Former organiser',
             'description' => 'Gathering South Africa\'s PHP Developers',
             'url' => 'https://phpsouthafrica.org'
         ]
