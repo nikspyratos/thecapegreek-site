@@ -53,11 +53,6 @@ return [
             'icon' => 'github',
             'title' => 'GitHub',
             'url' => 'https://github.com/nikolaos-spyratos'
-        ],
-        [
-            'icon' => 'envelope',
-            'title' => 'Email',
-            'url' => 'mailto:nik.spyratos@gmail.com'
         ]
     ],
     'footer' => [
