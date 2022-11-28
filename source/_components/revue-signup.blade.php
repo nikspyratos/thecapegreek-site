@@ -8,16 +8,15 @@
         class="flex flex-col flex-nowrap text-center"
     >
         <span class="text-xl mb-4">Subscribe for updates</span>
-        <div class="revue-form-group mb-4">
-            <label for="member_email" class="text-xl">Email:</label>
+        <div class="revue-form-group mb-4 block">
             <input
-                class="revue-form-field rounded-tl-md rounded-bl-md p-2 text-tcg_dark"
+                class="revue-form-field rounded-md xxs:rounded-r-none xxs:rounded-tl-md xxs:rounded-bl-md p-2 text-tcg_dark"
                 placeholder="Your email address..."
                 type="email"
                 name="member[email]"
                 id="member_email"
             ><input
-                class="rounded-tr-md rounded-br-md p-2 bg-tcg_light_blue hover:bg-tcg_pink cursor-pointer transition ease-in-out"
+                class="rounded-tr-md rounded-md my-2 xxs:my-0 xxs:rounded-l-none xxs:rounded-br-md p-2 bg-tcg_light_blue hover:bg-tcg_pink cursor-pointer transition ease-in-out"
                 type="submit"
                 value="Subscribe"
                 name="member[subscribe]"
