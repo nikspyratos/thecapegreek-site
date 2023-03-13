@@ -9,7 +9,7 @@ I love online communities. Hundreds and thousands of minds coming together to di
 
 I've been in online communities for about 14 years. Not quite the grizzled IRC veteran but still part of the evolution of online communities. My first was the Sims 2 online forum back in 2008, then the Spore forums for a time, and several others since. And... I'm tired. I've seen the ups and downs of some groups for years. I've seen others wither. I've seen valued members leave due to conflicts. I've especially seen the burden that leadership can become.
 
-The most active communities can also be some of the most valuable; most often if they stay in a niche. When you're new to a  topic, they can be an essential lifeline or progress multiplier. I'd say I owe at least half of my career success and industry knowledge to the [ZATech](zatech.co.za) community. In ZATech I've had many opportunities and learned from others in all sorts of topics (tech and non-tech). I'm immensely grateful to that community as a whole.
+The most active communities can also be some of the most valuable; most often if they stay in a niche. When you're new to a  topic, they can be an essential lifeline or progress multiplier. I'd say I owe at least half of my career success and industry knowledge to the [ZATech](www.zatech.co.za) community. In ZATech I've had many opportunities and learned from others in all sorts of topics (tech and non-tech). I'm immensely grateful to that community as a whole.
 
 After a while you might want "pay back" the debt of gratitude. This is often by giving the same value to others or becoming part of the moderators/organisers. I've done this by organising PHP Cape Town & PHP South Africa and giving free tech career advice.
 
