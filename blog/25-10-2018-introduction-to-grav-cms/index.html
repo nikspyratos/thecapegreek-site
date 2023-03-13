@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="canonical" href="https://www.thecapegreek.com/blog/25-10-2018-introduction-to-grav-cms">
+        <meta name="description" content="An overview of Grav CMS.">
+        <meta name=”robots” content="index, follow">
+        <title>Introduction to Grav CMS | Nik Spyratos - The Cape Greek</title>
+        <link rel="stylesheet" href="/assets/build/css/main.css?id=c791e2c83c8eccf3bcb6b2dffc2f0a8d">
+
+        <link rel="icon" href="/favicon.ico"><!-- 32×32 -->
+        <link rel="icon" href="/icon-192.png" type="image/svg+xml">
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png"><!-- 180×180 -->
+        <link rel="manifest" href="/manifest.webmanifest">
+        <link rel="alternate" type="application/rss+xml" title="Nik Spyratos - The Cape Greek" href="https://www.thecapegreek.com/rss.xml" />
+    </head>
+    <body class="font-display text-tcg_white antialiased flex content-center bg-fixed bg-tcg_dark">
+        <div class="max-w-content mx-auto sm:my-5 rounded-xl bg-tcg-gradient-primary p-5">
+            <header class="top-0 w-full p-4 flex flex-col justify-between bg-tcg_darker_purple border-tcg_pink border-b-2 rounded-t-xl text-tcg_white">
+    <a class="w-full mb-4 self-center justify-center flex flex-col sm:flex-row space-x-4" href="/">
+        <img class="w-48 sm:w-1/4 mb-2 sm:mb-0 rounded-full self-center" src="/assets/images/Nik Spyratos.webp">
+        <div class="flex flex-col self-center font-bold text-xl sm:text-2xl">
+            <span class="text-5xl sm:text-7xl clip-text bg-tcg-gradient-primary">Nik Spyratos</span>
+            <span class="text-3xl sm:text-5xl clip-text bg-tcg-gradient-secondary">@TheCapeGreek</span>
+        </div>
+    </a>
+    <nav class="w-full self-center justify-center flex flex-wrap flex-col text-lg lg:text-xl font-bold">
+                <address class="my-2 flex flex-wrap flex-row self-center">
+                            <a class="inline-block mx-1 pl-2 text-xl" href="https://twitter.com/thecapegreek" target="_blank">
+                    <img
+                        class="inline w-10 h-10"
+                        src="/assets/svg/twitter.svg"
+                        alt="Twitter"
+                    />
+                    Twitter
+                </a>
+                            <a class="inline-block mx-1 pl-2 text-xl" href="https://instagram.com/thecapegreek" target="_blank">
+                    <img
+                        class="inline w-10 h-10"
+                        src="/assets/svg/instagram.svg"
+                        alt="Instagram"
+                    />
+                    Instagram
+                </a>
+                            <a class="inline-block mx-1 pl-2 text-xl" href="https://www.linkedin.com/in/nikolaos-spyratos/" target="_blank">
+                    <img
+                        class="inline w-10 h-10"
+                        src="/assets/svg/linkedin.svg"
+                        alt="LinkedIn"
+                    />
+                    LinkedIn
+                </a>
+                            <a class="inline-block mx-1 pl-2 text-xl" href="https://github.com/nikolaos-spyratos" target="_blank">
+                    <img
+                        class="inline w-10 h-10"
+                        src="/assets/svg/github.svg"
+                        alt="GitHub"
+                    />
+                    GitHub
+                </a>
+                    </address>
+    </nav>
+</header>
+                <main id="content" class="bg-tcg_darker_purple shadow-inner py-6 text-lg">
+    <div class="mx-8">
+                    <div class="flex flex-wrap flex-row justify-center md:justify-between mb-8">
+            <div class="w-full md:w-1/2 mb-4 sm:mb-0 flex items-center justify-center md:justify-start">
+            <div>
+                <img
+                        class="w-12 h-12"
+                        src="/assets/svg/arrow-left.svg" alt="left arrow"
+                />
+            </div>
+            <div>
+                <a href="/blog/28-01-2019-introduction-to-laravel-telescope">Introduction to Laravel Telescope</a>
+            </div>
+        </div>
+                <div class="w-full md:w-1/2 flex items-center justify-center md:justify-end">
+            <div>
+                <a href="/blog/15-12-2017-is-privacy-dead-part-2">Is Privacy Dead? Part 2: Protecting yourself online</a>
+            </div>
+            <div>
+                <img
+                        class="w-12 h-12"
+                        src="/assets/svg/arrow-right.svg" alt="right arrow"
+                />
+            </div>
+        </div>
+    </div>
+    <hr>
+                            <h1>Introduction to Grav CMS</h1>
+            <span class="text-sm">25 October 2018</span>
+                <p><em>Originally presented at <a href="https://www.meetup.com/Cape-Town-PHP-Group/events/258058986/">PHP Cape Town on October 25, 2018</a>. Script is in its original form.</em></p>
+
+<h2>Introduction</h2>
+
+<p>Hey all. My name is Nik. Tonight I'll be presenting a short introduction to Grav CMS, on how it works and some cool things you can do with it. I host my notoriously unattended blog on it which I’ll show a link to later. So let’s get started. I’m really not a salesman or trying to sell anyone on this, I just find it a cool system to use and a breath of fresh air for the times I get tired of working with the bigger CMSes out there.</p>
+
+<h2>The marketing blurb version</h2>
+
+<p>of what Grav is is a “fast, simple, and flexible file-based web platform”. Now that’s a pretty dense way of describing a system and could apply to a lot of things really. What it means here for Grav specifically is that performance and simplicity of use are two of the most important concepts that shape what it does and how it does it.</p>
+
+<p>There are quite a lot of Open Source CMSes out there for building complex websites (your Wordpress, Joomla, Drupal, etc). However building on these platforms gives you some pretty locked-in knowledge of specifically how that platform works and not much else. Not to say you’re not learning anything useful by using those but sometimes you don’t want to specialise in these things and just want to get a darn website up and running.</p>
+
+<h2>How Grav keeps it simple</h2>
+
+<p>is that there is no installation process required to get up and running. You can extract a ZIP of the latest version and start slamming out content. Next, there are no databases required to use it as it is flat-file based. All configurations are stored in the system. You can always use a DB later on with plugins if you still need to.</p>
+
+<p>From its own description, the architecture is built with the intention of using established and so-called “best-in-class” technologies. This is also how the zero-install and flat-file design are achieved. The core technologies used in Grav are:
+• Twig templating engine (which if you’ve used Laravel/Blade it’s pretty similar, though I prefer Blade)
+• YAML for configuration storage
+• Markdown for page content
+• Doctrine Cache
+• Symfony Console for CLI</p>
+
+<p>Naturally there are several others but those are the most important ones for what I’ll be covering.</p>
+
+<h3>Twig</h3>
+
+<p>Is a templating engine that some of you are probably familiar with of you’ve worked with Drupal or Symfony.</p>
+
+<p>The short version for those that might not know is that you use it to make reusable page templates with it that a given page type (e.g. home page, blog post list, or individual components like a navigation bar) can use. I’ve worked a fair bit more in Blade myself, but there are some core differences.</p>
+
+<p>Twig has some extra features added on like a sandbox mode where you can play with untrusted templates. Additionally, instead of replacing the control structures used with equivalent PHP code like in Blade, Twig compiles the structures with a Lexer and parses everything.</p>
+
+<p>On the security side of things, Twig also limits which functions can be used in the template to those that you explicitly enable. For example, you can’t explicitly use Facades in a view (e.g. User::where(‘active’) ) without adding them to a config list first. This can end up being more work to get data out to the view but it also allows you to limit what your template designer can do in the cases where you’d need to.</p>
+
+<h3>YAML</h3>
+
+<p>YAML is one of those recursive acronyms, standing for “YAML Ain’t Markup Language”. It’s intent is to be a human-readable data serialization standard. The really quick way to describe it is imagine if JSON used whitespace instead of braces, which depending on your opinion on Python is either a really good thing or a really annoying thing.</p>
+
+<h3>Markdown</h3>
+
+<p>We should all here at least know what Markdown is even if we don’t use it. It’s a lightweight markup language with plain text formatting syntax. I’m sure we’ve all run into cases where you think your CMS’s WYSIWYG editor will be enough to get some page content done all neat and tidy but you’ve had to end up using the HTML editor and made some pretty ugly HTML code as a result.</p>
+
+<p>Grav uses Markdown in an interesting way. The first part of any MD page will be a YAML header denoted by --- at the top and bottom of it. This way you can have all your post metadata and extra variables available at any time for the template to use, and with Grav’s admin backend you can modify the headers as you like as well. Most of these are automatically generated for you (e.g. blog post category, creation date, page title) during the page creation process but if one of your templates needs some other fancy variable to get something working on it you can add it yourself.</p>
+
+<p>If however you don’t want to make your pages in Markdown, you actually have the option of writing them in Twig as well.</p>
+
+<h3>Caching</h3>
+
+<p>Caching is something that permeates Grav’s system options. It uses the Doctrine Cache library, which supports several drivers like redis, memcached and so on.</p>
+
+<p>Grav’s approach to caching allows you to customise pretty much any caching option from the admin panel directly without having to fiddle with anything on the server itself. You can toggle caching of every type of page asset. Twig, CSS, JS, images, even the output page itself.</p>
+
+<h3>Grav CLI</h3>
+
+<p>Grav has it’s own CLI (using Symfony Console) which you can use for several administrative tasks like clearing the cache and making backups. It can also make use of CLI-specific plugins so the world is really your oyster with this system.</p>
+
+<p>Included in this CLI is Grav’s own package manager (because of course we can never have enough package managers) for installing plugins. For those not so CLI-inclined there is also a plugin installer available on the admin dashboard.</p>
+
+<h3>A peek at the admin interface</h3>
+
+<p>When first log into your admin dashboard on Grav you’re greeted by a clean and simple page that’ll show you some useful statistics about your site, including current version, last backup date, site visit statistics and notifications from the Grav dev team. From there it’s pretty straight forward and you’ll be able to go to your site configuration, pages, plugins, themes or site tools.</p>
+
+<h4>Site Configuration</h4>
+
+<p>There’s not much to elaborate on here. You change your site settings here. There are high level options like home page, date format and redirect settings, and then your more advanced options like caching, CSS/JS pipelining (where all a page’s CSS/JS assets will be compiled into one CSS/JS file) and a whooole lot more. What’s also useful here is there is an Info tab where you can view things like PHP-specific settings, which can be nice if you’re debugging.</p>
+
+<h4>Pages</h4>
+
+<p>From here obviously you’re able to view and modify your pages. The way pages are stored in Grav is you’ll have a folder with your page’s name, and in that folder will be a markdown file named after the page type. So for example on my site a blog post page has a “post” page type, where the folder will contain a post.md file. For container pages like a post list, it becomes a tree-like structure where your post list (e.g. Blog) folder will then contain the individual item folders. If there’s custom data in your container page it will also have its own markdown file for that data so you don’t lose that flexibility if you need it.</p>
+
+<p>On the individual page editor you’ll get your standard WYSIWYG/MD editor and metadata options. The fun part comes in the advanced options. There you can change things like the parent (containing) page, the page’s template, and most importantly there are override settings available where you can override certain things like the caching and which rendering process is used (MD or Twig) to load the page.</p>
+
+<h4>Plugins</h4>
+
+<p>Now, when we consider whether or not to use a CMS often times a large part of that decision comes down to the amount of plugins available for the system. I’m fairly certain that for a large chunk of use cases, Grav has more than adequate plugin support. As of right now there are about 270 plugins available to install and use. Now, those are obviously incredibly tiny numbers compared to the big name competitors, but a lot of core options are supported. The Grav dev team has made quite a few plugins themselves, like OAuth2, git sync, and even a Snipcart plugin for working with e-commerce sites.</p>
+
+<p>Otherwise I’ve found some pretty neat plugins like RSS feed generation, codepen embedding, and automatic SEO. If you’re interested in Grav then I’d say take a dive into the plugins page and you’ll probably find something cool to play with.</p>
+
+<p>The main way to install plugins is either by fetching them through the admin interface or by using the CLI. Of course you can upload them yourself but that’s a bit of a waste of time.</p>
+
+<h4>Themes</h4>
+
+<p>Like with other CMSes, your themes determine a lot about the site you can build depending on the page or template types available. Grav’s theme availability is like expected small, but pretty robust. On my site I used the Medium theme and tweaked the CSS to turn it into a dark theme version.</p>
+
+<p>Making a theme for Grav is pretty easy. Since it’s all Twig-based you can very easily and quickly set up your partial templates and components and make unique page types to base your application on.</p>
+
+<h4>Tools</h4>
+
+<p>Lastly there is the site tools page on the dashboard, which currently just provides two more options for installing themes and plugins: direct ZIP upload or by remote URL.</p>
+
+<h2>Closing</h2>
+
+<p>That’s pretty much Grav in a nutshell. In my opinion Grav is a fun and lightweight system to play around with, and you can do some pretty cool things with it. I won’t say it’s groundbreaking or “the next big thing” because in the end it’s up to the individual if they like it and want to use it or not. If you want to check out Grav and some sites built with it, head on to getgrav.org. While searching for sites built in Grav I found the site I used to make the slides for this, slidecraft.com. Good luck and happy tinkering.</p>
+                    <hr>
+<div class="flex flex-wrap flex-row justify-center md:justify-between ">
+            <div class="w-full md:w-1/2 mb-4 sm:mb-0 flex items-center justify-center md:justify-start">
+            <div>
+                <img
+                        class="w-12 h-12"
+                        src="/assets/svg/arrow-left.svg" alt="left arrow"
+                />
+            </div>
+            <div>
+                <a href="/blog/28-01-2019-introduction-to-laravel-telescope">Introduction to Laravel Telescope</a>
+            </div>
+        </div>
+                <div class="w-full md:w-1/2 flex items-center justify-center md:justify-end">
+            <div>
+                <a href="/blog/15-12-2017-is-privacy-dead-part-2">Is Privacy Dead? Part 2: Protecting yourself online</a>
+            </div>
+            <div>
+                <img
+                        class="w-12 h-12"
+                        src="/assets/svg/arrow-right.svg" alt="right arrow"
+                />
+            </div>
+        </div>
+    </div>
+            </div>
+</main>
+            <footer class=" w-full p-4 flex flex-wrap lg:flex-row justify-center bg-tcg_darker_purple border-tcg_pink border-t-2 rounded-b-xl text-tcg_white">
+    <ul class="flex flex-col md:flex-row list-none self-center items-center md:divide md:divide-x-2 md:divide-tcg_grey">
+                    <li class="inline-block mr-1 pl-2">
+                Built with
+                <a
+                    href="https://jigsaw.tighten.co"
+                >
+                    Jigsaw
+                </a>
+            </li>
+                    <li class="inline-block mr-1 pl-2">
+                Unicons by
+                <a
+                    href="https://iconscout.com/"
+                >
+                    Iconscout
+                </a>
+            </li>
+            </ul>
+</footer>
+
+
+        </div>
+    </body>
+</html>
